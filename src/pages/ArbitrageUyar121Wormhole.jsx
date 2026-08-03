@@ -280,11 +280,45 @@ export default function ArbitrageUyar121Wormhole() {
               - dana ketahan berjam-jam. Jadi, stay safe dan selalu cek queue-nya.
             </p>
             <div className="callout tip">
-              Ini kayak versi Wormhole dari peringatan DVN di Part #1 - protokolnya
-              beda, mekanisme keamanannya beda, tapi intinya sama: selalu cek
-              limit/status jembatannya sebelum push, jangan asumsikan semua bridge
-              punya risiko yang sama.
+              <span className="lbl">Catatan editor</span>
+              Governor ini beda kategori sama DVN di Part #1 - DVN itu soal keamanan
+              verifikasi pesan bridge, Governor soal limit nilai/rate harian. Padanan
+              DVN yang lebih pas di Wormhole justru <strong>Token Verifier &amp;
+              Attestation</strong> (section 05 di atas) - itu yang ngecek apakah token
+              memang aman/terdaftar buat di-bridge. Governor tetap wajib dicek, tapi
+              sebagai risiko tambahan yang berdiri sendiri, bukan pengganti Attestation.
             </div>
+
+            <h3>Rangkuman: 3 Penyebab Dana Nyangkut</h3>
+            <table className="journal">
+              <tbody>
+                <tr>
+                  <th>Penyebab</th>
+                  <th>Di Mana</th>
+                  <th>Cara Cegah</th>
+                </tr>
+                <tr>
+                  <td>DVN 1/1 (verifier lawas)</td>
+                  <td>LayerZero / Stargate (Part #1)</td>
+                  <td>Cek status DVN di LayerZeroScan sebelum bridge</td>
+                </tr>
+                <tr>
+                  <td>Lupa klik Redeem manual</td>
+                  <td>Legacy Portal Bridge (Part #3)</td>
+                  <td>Selalu tunggu sampai proses redeem selesai, jangan close tab</td>
+                </tr>
+                <tr>
+                  <td>Kena limit Governor</td>
+                  <td>Wormhole (Part #3)</td>
+                  <td>Cek Queue Transaction di Wormholescan sebelum eksekusi</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              Tiga-tiganya beda penyebab, tapi gejalanya sama: dana ketahan. Jadi
+              sebelum eksekusi bridge apa pun, checklist ini wajib dicek sesuai
+              protokol yang dipakai.
+            </p>
           </section>
 
           <footer>rangkuman thread @Uyar121 · dirapikan untuk arsip pribadi</footer>
