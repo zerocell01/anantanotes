@@ -40,13 +40,27 @@
 .note-degen .back-link:hover {
   color: var(--bull);
 }
+.note-degen .author-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.note-degen .avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
 .note-degen .brand {
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.12em;
   color: var(--muted);
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin-bottom: 0;
 }
 .note-degen .brand strong {
   color: var(--bull);

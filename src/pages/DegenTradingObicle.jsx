@@ -45,8 +45,11 @@ export default function DegenTradingObicle() {
           <Link className="back-link" to="/">
             ← Ananta Notes
           </Link>
-          <div className="brand">
-            Thread archive · <strong>@obicle</strong>
+          <div className="author-row">
+            <img className="avatar" src={IMG('avatar.jpg')} alt="@obicle" />
+            <div className="brand">
+              Thread archive · <strong>@obicle</strong>
+            </div>
           </div>
           <h1>Degen Trading Thread</h1>
           <nav className="toc">
