@@ -7,12 +7,17 @@ import ThemeToggle from './ThemeToggle.jsx'
 function NoteCard({ note }) {
   return (
     <Link className="note-card" to={note.href}>
-      <div className="note-meta">
-        <span className="dot" />
-        {note.topic} · {note.author}
+      <div className="note-card-row">
+        {note.avatar && <img className="note-avatar" src={note.avatar} alt={note.author} />}
+        <div>
+          <div className="note-meta">
+            <span className="dot" />
+            {note.topic} · {note.author}
+          </div>
+          <div className="note-title">{note.title}</div>
+          <div className="note-desc">{note.desc}</div>
+        </div>
       </div>
-      <div className="note-title">{note.title}</div>
-      <div className="note-desc">{note.desc}</div>
     </Link>
   )
 }

@@ -135,6 +135,21 @@
 .note-degen h1.title span {
   color: var(--bull);
 }
+.note-degen .byline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  font-size: 14.5px;
+  color: var(--muted);
+}
+.note-degen .byline strong {
+  color: var(--text);
+}
+.note-degen .avatar-lg {
+  width: 32px;
+  height: 32px;
+}
 .note-degen .subtitle {
   color: var(--muted);
   font-size: 16px;

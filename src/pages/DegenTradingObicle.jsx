@@ -68,6 +68,12 @@ export default function DegenTradingObicle() {
             <h1 className="title">
               Degen Trading <span>Thread</span>
             </h1>
+            <div className="byline">
+              <img className="avatar avatar-lg" src={IMG('avatar.jpg')} alt="@obicle" />
+              <span>
+                oleh <strong>@obicle</strong>
+              </span>
+            </div>
             <p className="subtitle">
               Rangkuman lengkap strategi trading meme coin ala @obicle — dari setup
               teknikal, risk management, sampai sistem journaling — dirapikan biar enak
