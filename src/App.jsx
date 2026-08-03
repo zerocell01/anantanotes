@@ -26,7 +26,23 @@ function NoteCard({ note }) {
   )
 }
 
+function groupByCategory(list) {
+  const groups = []
+  const index = new Map()
+  for (const note of list) {
+    const key = note.category ?? 'Lainnya'
+    if (!index.has(key)) {
+      index.set(key, { category: key, accent: note.accent, items: [] })
+      groups.push(index.get(key))
+    }
+    index.get(key).items.push(note)
+  }
+  return groups
+}
+
 function Home() {
+  const groups = groupByCategory(notes)
+
   return (
     <>
       <div className="grid-bg" />
@@ -41,11 +57,19 @@ function Home() {
         </p>
 
         <h2 className="section">Catatan ({notes.length})</h2>
-        <div className="notes-list">
-          {notes.map((note) => (
-            <NoteCard key={note.slug} note={note} />
-          ))}
-        </div>
+        {groups.map((group) => (
+          <div key={group.category} className="note-group">
+            <h3 className={`group-title accent-${group.accent}`}>
+              {group.category}
+              <span className="group-count">{group.items.length}</span>
+            </h3>
+            <div className="notes-list">
+              {group.items.map((note) => (
+                <NoteCard key={note.slug} note={note} />
+              ))}
+            </div>
+          </div>
+        ))}
 
         <footer>Ananta Notes</footer>
       </main>
