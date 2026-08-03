@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { notes } from './notes.js'
 import DegenTradingObicle from './pages/DegenTradingObicle.jsx'
+import { ThemeProvider } from './ThemeContext.jsx'
+import ThemeToggle from './ThemeToggle.jsx'
 
 function NoteCard({ note }) {
   return (
@@ -44,11 +46,14 @@ function Home() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/notes/degen-trading-obicle" element={<DegenTradingObicle />} />
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <ThemeToggle />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/notes/degen-trading-obicle" element={<DegenTradingObicle />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   )
 }

@@ -1,21 +1,3 @@
-.note-degen {
-  --bg: #f8faf8;
-  --surface: #ffffff;
-  --surface-2: #eef4ef;
-  --border: #e3e9e2;
-  --text: #16201a;
-  --muted: #647268;
-  --bull: #16a34a;
-  --bull-dim: #e8f8ee;
-  --bear: #dc2626;
-  --bear-dim: #fdecec;
-  --amber: #b45309;
-  --amber-dim: #fef3e0;
-  --mono: 'JetBrains Mono', monospace;
-  --display: 'Space Grotesk', sans-serif;
-  --body: 'IBM Plex Sans', sans-serif;
-}
-
 /* ---------- Layout ---------- */
 .note-degen .layout {
   position: relative;
@@ -125,7 +107,7 @@
   height: 7px;
   border-radius: 50%;
   background: var(--bull);
-  box-shadow: 0 0 8px rgba(22, 163, 74, 0.45);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--bull) 45%, transparent);
 }
 .note-degen h1.title {
   font-family: var(--display);
@@ -150,7 +132,7 @@
   font-size: 12.5px;
   color: var(--amber);
   background: var(--amber-dim);
-  border: 1px solid rgba(180, 83, 9, 0.25);
+  border: 1px solid color-mix(in srgb, var(--amber) 25%, transparent);
   border-radius: 8px;
   padding: 14px 16px;
   max-width: 720px;
@@ -228,7 +210,7 @@
 
 .note-degen p {
   margin: 0 0 14px;
-  color: #384a3d;
+  color: var(--text-body);
   font-size: 15.5px;
 }
 .note-degen strong {
@@ -245,7 +227,7 @@
   padding-left: 22px;
   margin-bottom: 9px;
   font-size: 15.5px;
-  color: #384a3d;
+  color: var(--text-body);
 }
 .note-degen ul.list li::before {
   content: '›';
@@ -302,18 +284,18 @@
 }
 .note-degen .callout.tip {
   background: var(--bull-dim);
-  border-color: rgba(22, 163, 74, 0.25);
-  color: #14532d;
+  border-color: color-mix(in srgb, var(--bull) 25%, transparent);
+  color: var(--callout-tip-text);
 }
 .note-degen .callout.warn {
   background: var(--amber-dim);
-  border-color: rgba(180, 83, 9, 0.25);
-  color: #7c3e0a;
+  border-color: color-mix(in srgb, var(--amber) 25%, transparent);
+  color: var(--callout-warn-text);
 }
 .note-degen .callout.stop {
   background: var(--bear-dim);
-  border-color: rgba(220, 38, 38, 0.25);
-  color: #7f1d1d;
+  border-color: color-mix(in srgb, var(--bear) 25%, transparent);
+  color: var(--callout-stop-text);
 }
 .note-degen .callout .lbl {
   font-family: var(--mono);
@@ -384,7 +366,7 @@
 .note-degen table.journal td {
   padding: 12px 14px;
   border-bottom: 1px solid var(--border);
-  color: #384a3d;
+  color: var(--text-body);
   vertical-align: top;
 }
 .note-degen table.journal tr:last-child td {
@@ -448,7 +430,7 @@
 
 .note-degen ::selection {
   background: var(--bull);
-  color: #ffffff;
+  color: var(--selection-text);
 }
 
 .note-degen ::-webkit-scrollbar {
