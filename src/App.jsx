@@ -47,7 +47,7 @@ function Home() {
           ))}
         </div>
 
-        <footer>Ananta Notes - dikelola oleh @zerocell01</footer>
+        <footer>Ananta Notes</footer>
       </main>
     </>
   )
