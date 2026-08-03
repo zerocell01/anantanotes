@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useActiveSection } from '../hooks/useActiveSection.js'
 import '../styles/note-page.css'
 
 const TOC = [
@@ -14,6 +15,8 @@ const TOC = [
   ['s10', 'Trade Breakdown'],
   ['s11', 'Review Mingguan'],
 ]
+
+const SECTION_IDS = TOC.map(([id]) => id)
 
 const CANDLE_HEIGHTS = [30, 42, 38, 55, 50, 68, 60, 80, 72, 95, 86, 108]
 
@@ -37,6 +40,8 @@ function Signature() {
 }
 
 export default function DegenTradingObicle() {
+  const activeId = useActiveSection(SECTION_IDS)
+
   return (
     <div className="note-page">
       <div className="grid-bg" />
@@ -54,7 +59,7 @@ export default function DegenTradingObicle() {
           <h1>Degen Trading Thread</h1>
           <nav className="toc">
             {TOC.map(([id, label], i) => (
-              <a key={id} href={`#${id}`}>
+              <a key={id} href={`#${id}`} className={id === activeId ? 'active' : undefined}>
                 <span className="num">{String(i + 1).padStart(2, '0')}</span>
                 {label}
               </a>

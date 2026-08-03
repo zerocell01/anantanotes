@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useActiveSection } from '../hooks/useActiveSection.js'
 import '../styles/note-page.css'
 
 const TOC = [
@@ -12,9 +13,13 @@ const TOC = [
   ['s8', 'Risiko & Tips Pemula'],
 ]
 
+const SECTION_IDS = TOC.map(([id]) => id)
+
 const IMG = (name) => `/notes/assets/arbitrage-uyar121/${name}`
 
 export default function ArbitrageUyar121() {
+  const activeId = useActiveSection(SECTION_IDS)
+
   return (
     <div className="note-page">
       <div className="grid-bg" />
@@ -32,7 +37,7 @@ export default function ArbitrageUyar121() {
           <h1>Arbitrage From Zero #1</h1>
           <nav className="toc">
             {TOC.map(([id, label], i) => (
-              <a key={id} href={`#${id}`}>
+              <a key={id} href={`#${id}`} className={id === activeId ? 'active' : undefined}>
                 <span className="num">{String(i + 1).padStart(2, '0')}</span>
                 {label}
               </a>
