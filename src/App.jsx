@@ -37,7 +37,7 @@ function Home() {
         <h1>Catatan Belajar Web3</h1>
         <p className="lede">
           Kumpulan thread, artikel, dan rangkuman dari mentor &amp; sumber-sumber belajar
-          Web3 - trading, on-chain, dan seluk-beluk lainnya. Terus bertambah.
+          Web3 - trading, on-chain, arbit dan lainnya.
         </p>
 
         <h2 className="section">Catatan ({notes.length})</h2>
