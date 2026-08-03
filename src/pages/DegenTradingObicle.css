@@ -1,16 +1,16 @@
 .note-degen {
-  --bg: #0b1210;
-  --surface: #111c19;
-  --surface-2: #16221e;
-  --border: #22322d;
-  --text: #e7efe9;
-  --muted: #8fa39a;
-  --bull: #33d17a;
-  --bull-dim: #1b3a2b;
-  --bear: #ff6161;
-  --bear-dim: #3a1e1e;
-  --amber: #f2b134;
-  --amber-dim: #3a2f14;
+  --bg: #f8faf8;
+  --surface: #ffffff;
+  --surface-2: #eef4ef;
+  --border: #e3e9e2;
+  --text: #16201a;
+  --muted: #647268;
+  --bull: #16a34a;
+  --bull-dim: #e8f8ee;
+  --bear: #dc2626;
+  --bear-dim: #fdecec;
+  --amber: #b45309;
+  --amber-dim: #fef3e0;
   --mono: 'JetBrains Mono', monospace;
   --display: 'Space Grotesk', sans-serif;
   --body: 'IBM Plex Sans', sans-serif;
@@ -74,6 +74,7 @@
   font-size: 19px;
   margin: 0 0 24px;
   line-height: 1.25;
+  color: var(--text);
 }
 .note-degen nav.toc a {
   display: flex;
@@ -124,7 +125,7 @@
   height: 7px;
   border-radius: 50%;
   background: var(--bull);
-  box-shadow: 0 0 8px var(--bull);
+  box-shadow: 0 0 8px rgba(22, 163, 74, 0.45);
 }
 .note-degen h1.title {
   font-family: var(--display);
@@ -133,6 +134,7 @@
   line-height: 1.05;
   margin: 0 0 14px;
   letter-spacing: -0.01em;
+  color: var(--text);
 }
 .note-degen h1.title span {
   color: var(--bull);
@@ -148,8 +150,8 @@
   font-size: 12.5px;
   color: var(--amber);
   background: var(--amber-dim);
-  border: 1px solid rgba(242, 177, 52, 0.35);
-  border-radius: 6px;
+  border: 1px solid rgba(180, 83, 9, 0.25);
+  border-radius: 8px;
   padding: 14px 16px;
   max-width: 720px;
   line-height: 1.6;
@@ -166,8 +168,8 @@
 .note-degen .candle {
   width: 9px;
   background: var(--bull);
-  border-radius: 1px;
-  opacity: 0.85;
+  border-radius: 2px;
+  opacity: 0.9;
 }
 .note-degen .candle.down {
   background: var(--bear);
@@ -209,6 +211,7 @@
   font-size: clamp(24px, 3vw, 32px);
   margin: 0 0 20px;
   letter-spacing: -0.01em;
+  color: var(--text);
 }
 .note-degen h3 {
   font-family: var(--display);
@@ -225,7 +228,7 @@
 
 .note-degen p {
   margin: 0 0 14px;
-  color: #d3ded7;
+  color: #384a3d;
   font-size: 15.5px;
 }
 .note-degen strong {
@@ -242,7 +245,7 @@
   padding-left: 22px;
   margin-bottom: 9px;
   font-size: 15.5px;
-  color: #d3ded7;
+  color: #384a3d;
 }
 .note-degen ul.list li::before {
   content: '›';
@@ -266,8 +269,9 @@
   margin-bottom: 8px;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 15px;
+  box-shadow: 0 1px 2px rgba(22, 32, 26, 0.03);
 }
 .note-degen ol.steps li::before {
   content: counter(step);
@@ -277,7 +281,7 @@
   transform: translateY(-50%);
   font-family: var(--mono);
   font-weight: 600;
-  color: var(--bg);
+  color: #ffffff;
   background: var(--bull);
   width: 22px;
   height: 22px;
@@ -289,7 +293,7 @@
 }
 
 .note-degen .callout {
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 16px 18px;
   margin: 18px 0;
   font-size: 14.5px;
@@ -298,18 +302,18 @@
 }
 .note-degen .callout.tip {
   background: var(--bull-dim);
-  border-color: rgba(51, 209, 122, 0.35);
-  color: #cdeedb;
+  border-color: rgba(22, 163, 74, 0.25);
+  color: #14532d;
 }
 .note-degen .callout.warn {
   background: var(--amber-dim);
-  border-color: rgba(242, 177, 52, 0.35);
-  color: #f4dfae;
+  border-color: rgba(180, 83, 9, 0.25);
+  color: #7c3e0a;
 }
 .note-degen .callout.stop {
   background: var(--bear-dim);
-  border-color: rgba(255, 97, 97, 0.35);
-  color: #ffd3d3;
+  border-color: rgba(220, 38, 38, 0.25);
+  color: #7f1d1d;
 }
 .note-degen .callout .lbl {
   font-family: var(--mono);
@@ -327,8 +331,9 @@
 }
 .note-degen figure img {
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid var(--border);
+  box-shadow: 0 1px 2px rgba(22, 32, 26, 0.04), 0 12px 24px -16px rgba(22, 32, 26, 0.15);
 }
 .note-degen figcaption {
   font-family: var(--mono);
@@ -341,9 +346,10 @@
   background: var(--surface);
   border: 1px solid var(--border);
   border-left: 3px solid var(--bull);
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 16px 18px;
   margin-bottom: 14px;
+  box-shadow: 0 1px 2px rgba(22, 32, 26, 0.03);
 }
 .note-degen .rule-card .tag {
   font-family: var(--mono);
@@ -357,9 +363,13 @@
 
 .note-degen table.journal {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   margin: 18px 0 24px;
   font-size: 14px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
 }
 .note-degen table.journal th {
   font-family: var(--mono);
@@ -367,18 +377,21 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   text-align: left;
-  color: var(--bg);
+  color: #ffffff;
   background: var(--bull);
   padding: 10px 14px;
 }
 .note-degen table.journal td {
   padding: 12px 14px;
   border-bottom: 1px solid var(--border);
-  color: #d3ded7;
+  color: #384a3d;
   vertical-align: top;
 }
+.note-degen table.journal tr:last-child td {
+  border-bottom: none;
+}
 .note-degen table.journal tr:nth-child(even) td {
-  background: var(--surface);
+  background: var(--surface-2);
 }
 
 .note-degen .metric-row {
@@ -392,9 +405,10 @@
   font-size: 13px;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 10px 14px;
   color: var(--text);
+  box-shadow: 0 1px 2px rgba(22, 32, 26, 0.03);
 }
 .note-degen .metric b {
   color: var(--bull);
@@ -409,9 +423,9 @@
   margin: 16px 0 20px;
 }
 .note-degen .pill {
-  background: var(--surface);
+  background: var(--surface-2);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 10px 12px;
   font-size: 13px;
   color: var(--muted);
@@ -434,7 +448,7 @@
 
 .note-degen ::selection {
   background: var(--bull);
-  color: #04140c;
+  color: #ffffff;
 }
 
 .note-degen ::-webkit-scrollbar {

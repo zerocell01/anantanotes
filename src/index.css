@@ -1,11 +1,12 @@
 :root {
-  --bg: #0b1210;
-  --surface: #111c19;
-  --surface-2: #16221e;
-  --border: #22322d;
-  --text: #e7efe9;
-  --muted: #8fa39a;
-  --bull: #33d17a;
+  --bg: #f8faf8;
+  --surface: #ffffff;
+  --surface-2: #f1f6f2;
+  --border: #e3e9e2;
+  --text: #16201a;
+  --muted: #647268;
+  --accent: #16a34a;
+  --accent-soft: #e8f8ee;
   --mono: 'JetBrains Mono', monospace;
   --display: 'Space Grotesk', sans-serif;
   --body: 'IBM Plex Sans', sans-serif;
@@ -43,8 +44,8 @@ a {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(22, 32, 26, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(22, 32, 26, 0.035) 1px, transparent 1px);
   background-size: 42px 42px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 90%);
 }
@@ -67,7 +68,7 @@ main {
 }
 
 .brand strong {
-  color: var(--bull);
+  color: var(--accent);
 }
 
 h1 {
@@ -75,6 +76,7 @@ h1 {
   font-size: clamp(30px, 6vw, 48px);
   margin: 0 0 14px;
   line-height: 1.15;
+  color: var(--text);
 }
 
 .lede {
@@ -107,15 +109,16 @@ h1 {
   color: inherit;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 16px;
   padding: 20px 22px;
-  transition: border-color 0.15s ease, transform 0.15s ease, background 0.15s ease;
+  box-shadow: 0 1px 2px rgba(22, 32, 26, 0.04), 0 10px 24px -16px rgba(22, 32, 26, 0.12);
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .note-card:hover {
-  border-color: var(--bull);
-  background: var(--surface-2);
-  transform: translateY(-1px);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(22, 32, 26, 0.05), 0 16px 32px -16px rgba(22, 163, 74, 0.25);
 }
 
 .note-meta {
@@ -124,7 +127,7 @@ h1 {
   gap: 8px;
   font-family: var(--mono);
   font-size: 11.5px;
-  color: var(--bull);
+  color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 8px;
@@ -134,7 +137,7 @@ h1 {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--bull);
+  background: var(--accent);
   flex-shrink: 0;
 }
 
@@ -143,6 +146,7 @@ h1 {
   font-size: 19px;
   font-weight: 600;
   margin-bottom: 6px;
+  color: var(--text);
 }
 
 .note-desc {
