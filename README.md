@@ -12,6 +12,8 @@ Dibangun pakai **React + Vite** (SPA, client-side routing) biar cepat dan respon
 | [Arbitrage From Zero #1](src/pages/ArbitrageUyar121.jsx) | [@Uyar121](https://twitter.com/Uyar121) | Cross-chain arbitrage |
 | [Arbitrage From Zero #2](src/pages/ArbitrageUyar121Screening.jsx) | [@Uyar121](https://twitter.com/Uyar121) | Screening arbitrage opportunity |
 | [Arbitrage From Zero #3](src/pages/ArbitrageUyar121Wormhole.jsx) | [@Uyar121](https://twitter.com/Uyar121) | Bridge tool Wormhole |
+| [Arbitrage From Zero #4](src/pages/ArbitrageUyar121Ccip.jsx) | [@Uyar121](https://twitter.com/Uyar121) | Bridge tool Chainlink CCIP |
+| [Arbitrage From Zero #5](src/pages/ArbitrageUyar121FindBridge.jsx) | [@Uyar121](https://twitter.com/Uyar121) | Cara cek jalur bridge token |
 
 Daftar di atas bakal terus bertambah seiring catatan baru ditambahkan.
 
