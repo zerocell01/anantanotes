@@ -14,6 +14,7 @@ Dibangun pakai **React + Vite** (SPA, client-side routing) biar cepat dan respon
 | [Arbitrage From Zero #3](src/pages/ArbitrageUyar121Wormhole.jsx) | [@Uyar121](https://twitter.com/Uyar121) | Bridge tool Wormhole |
 | [Arbitrage From Zero #4](src/pages/ArbitrageUyar121Ccip.jsx) | [@Uyar121](https://twitter.com/Uyar121) | Bridge tool Chainlink CCIP |
 | [Arbitrage From Zero #5](src/pages/ArbitrageUyar121FindBridge.jsx) | [@Uyar121](https://twitter.com/Uyar121) | Cara cek jalur bridge token |
+| [Arbitrage Breakdown: $80 -> $118](src/pages/ArbitrageUyar121Breakdown.jsx) | [@Uyar121](https://twitter.com/Uyar121) | Studi kasus eksekusi arbitrage nyata |
 
 Daftar di atas bakal terus bertambah seiring catatan baru ditambahkan.
 

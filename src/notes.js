@@ -71,4 +71,16 @@ export const notes = [
     avatar: '/notes/assets/arbitrage-uyar121/avatar.jpg',
     accent: 'purple',
   },
+  {
+    slug: 'arbitrage-uyar121-breakdown',
+    title: 'Arbitrage Breakdown: $80 -> $118',
+    author: '@Uyar121',
+    authorUrl: 'https://twitter.com/Uyar121',
+    category: 'Arbitrage',
+    topic: 'Arbitrage · Studi Kasus',
+    desc: 'Breakdown eksekusi nyata arbitrage msETH & msUSD yang depeg, dari riset chain sampai looping bridge, dari @Uyar121.',
+    href: '/notes/arbitrage-uyar121-breakdown',
+    avatar: '/notes/assets/arbitrage-uyar121/avatar.jpg',
+    accent: 'purple',
+  },
 ]

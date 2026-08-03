@@ -6,6 +6,7 @@ import ArbitrageUyar121Screening from './pages/ArbitrageUyar121Screening.jsx'
 import ArbitrageUyar121Wormhole from './pages/ArbitrageUyar121Wormhole.jsx'
 import ArbitrageUyar121Ccip from './pages/ArbitrageUyar121Ccip.jsx'
 import ArbitrageUyar121FindBridge from './pages/ArbitrageUyar121FindBridge.jsx'
+import ArbitrageUyar121Breakdown from './pages/ArbitrageUyar121Breakdown.jsx'
 import { ThemeProvider } from './ThemeContext.jsx'
 import ThemeToggle from './ThemeToggle.jsx'
 
@@ -92,6 +93,7 @@ export default function App() {
           <Route path="/notes/arbitrage-uyar121-wormhole" element={<ArbitrageUyar121Wormhole />} />
           <Route path="/notes/arbitrage-uyar121-ccip" element={<ArbitrageUyar121Ccip />} />
           <Route path="/notes/arbitrage-uyar121-find-bridge" element={<ArbitrageUyar121FindBridge />} />
+          <Route path="/notes/arbitrage-uyar121-breakdown" element={<ArbitrageUyar121Breakdown />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
