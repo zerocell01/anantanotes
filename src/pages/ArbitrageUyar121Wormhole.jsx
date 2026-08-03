@@ -58,12 +58,12 @@ export default function ArbitrageUyar121Wormhole() {
               </span>
             </div>
             <p className="subtitle">
-              #3: Lanjutan dari Arbitrage From Zero #1 & #2 — bedah tuntas bridge tool
+              #3: Lanjutan dari Arbitrage From Zero #1 & #2 - bedah tuntas bridge tool
               yang gak kalah powerful dan sering jadi ladang arbit: Wormhole.
             </p>
             <div className="disclaimer">
               ⚠ konten ini adalah rangkuman edukasi/strategi milik pembuat thread
-              aslinya (@Uyar121). arbitrage &amp; bridging antar-chain tetap berisiko —
+              aslinya (@Uyar121). arbitrage &amp; bridging antar-chain tetap berisiko -
               bukan rekomendasi finansial.
             </div>
             <figure>
@@ -79,7 +79,7 @@ export default function ArbitrageUyar121Wormhole() {
             <p>
               Singkatnya, Wormhole itu protokol komunikasi cross-chain. Dia memungkinkan
               transfer token dan data antar-chain yang bahkan beda arsitektur (EVM,
-              Solana, IBC, SUI, dll). Buat arbitrage, Wormhole ini sweet spot banget —
+              Solana, IBC, SUI, dll). Buat arbitrage, Wormhole ini sweet spot banget -
               dari beberapa protokol yang di-support, filter yang paling sering dipakai
               adalah <strong>Portal Bridge</strong> dan <strong>Wormhole NTT</strong>.
             </p>
@@ -105,7 +105,7 @@ export default function ArbitrageUyar121Wormhole() {
             <p>Wormhole punya dua versi interface utama untuk bridging:</p>
             <ul className="list">
               <li>
-                <strong>Portal Bridge (versi baru)</strong> —{' '}
+                <strong>Portal Bridge (versi baru)</strong> -{' '}
                 <a href="https://portalbridge.com/" target="_blank" rel="noreferrer">
                   portalbridge.com
                 </a>
@@ -114,13 +114,13 @@ export default function ArbitrageUyar121Wormhole() {
                 dll)
               </li>
               <li>
-                <strong>Legacy Portal Bridge</strong> —{' '}
+                <strong>Legacy Portal Bridge</strong> -{' '}
                 <a href="https://legacy.portalbridge.com/" target="_blank" rel="noreferrer">
                   legacy.portalbridge.com
                 </a>
                 . Baru wajib dipakai kalau token yang mau di-bridge melibatkan chain
                 yang belum di-support di Portal Bridge terbaru (seperti Algorand, Near,
-                atau Acala) — contohnya token $SWEAT waktu mau bridge dari ETH ke NEAR
+                atau Acala) - contohnya token $SWEAT waktu mau bridge dari ETH ke NEAR
               </li>
             </ul>
           </section>
@@ -142,13 +142,13 @@ export default function ArbitrageUyar121Wormhole() {
               <span className="lbl">Catatan super penting sebelum eksekusi</span>
               Begitu contract address token di chain tujuan muncul, <strong>jangan
               asal gas!</strong> Klik CA tersebut untuk lari ke explorer, lalu cek ada
-              aktivitas swap atau enggak — atau tes simulasi swap di DEX utama chain
+              aktivitas swap atau enggak - atau tes simulasi swap di DEX utama chain
               tersebut. Jangan sampai udah capek-capek bridge, pas mendarat malah gak
               ada liquidity alias zonk.
             </div>
             <p>
               <strong>Speed vs Fee:</strong> pilih "Cheapest" kalau mau hemat, tapi
-              siap nunggu ~18 menit — kecuali buat chain super ngebut kayak
+              siap nunggu ~18 menit - kecuali buat chain super ngebut kayak
               HYPE/MONAD dan sejenisnya.
             </p>
             <figure>
@@ -223,7 +223,7 @@ export default function ArbitrageUyar121Wormhole() {
             <div className="eyebrow">
               <span className="n">06</span> / Senjata Rahasia #2
             </div>
-            <h2>Wormholescan — Kompas Berburu Arbit</h2>
+            <h2>Wormholescan - Kompas Berburu Arbit</h2>
             <p>
               Cara pakai{' '}
               <a href="https://wormholescan.io/" target="_blank" rel="noreferrer">
@@ -233,15 +233,15 @@ export default function ArbitrageUyar121Wormhole() {
             </p>
             <ul className="list">
               <li>
-                <strong>Pantau Transactions &amp; Kompetitor</strong> — filter Protocol
+                <strong>Pantau Transactions &amp; Kompetitor</strong> - filter Protocol
                 ke Portal &amp; Wormhole NTT, atur source/target chain incaran. Lihat
                 berapa banyak saingan yang lagi nge-bridge token yang sama. Di dunia
-                arbit, speed is everything — kalau saingan udah status Success,
+                arbit, speed is everything - kalau saingan udah status Success,
                 perhatikan harga/gap di chain tujuan masih ada atau enggak (price
                 impact gede)
               </li>
               <li>
-                <strong>Berburu di Menu Asset Secured</strong> — daftar token yang
+                <strong>Berburu di Menu Asset Secured</strong> - daftar token yang
                 di-support Wormhole. Cek kategori NTT &amp; Others. Kalau token
                 incaran gak ada, berarti dia pakai bridge lain
               </li>
@@ -272,15 +272,15 @@ export default function ArbitrageUyar121Wormhole() {
             <div className="callout stop">
               Sebelum pencet bridge, wajib cek <strong>Queue Transaction</strong> di
               Wormholescan (menu Governor). Kalau token masuk antrean situ, artinya
-              token itu udah kena <strong>Value Limit Bridge</strong> harian — dana
+              token itu udah kena <strong>Value Limit Bridge</strong> harian - dana
               bakal nyangkut dan baru akan rilis bertahap (paling lama 24 jam).
             </div>
             <p>
               Dulu pernah apes bridge $SWEAT dari NEAR ke ETH pas limitnya lagi penuh
-              — dana ketahan berjam-jam. Jadi, stay safe dan selalu cek queue-nya.
+              - dana ketahan berjam-jam. Jadi, stay safe dan selalu cek queue-nya.
             </p>
             <div className="callout tip">
-              Ini kayak versi Wormhole dari peringatan DVN di Part #1 — protokolnya
+              Ini kayak versi Wormhole dari peringatan DVN di Part #1 - protokolnya
               beda, mekanisme keamanannya beda, tapi intinya sama: selalu cek
               limit/status jembatannya sebelum push, jangan asumsikan semua bridge
               punya risiko yang sama.

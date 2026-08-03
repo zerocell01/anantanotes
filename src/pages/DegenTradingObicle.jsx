@@ -80,14 +80,14 @@ export default function DegenTradingObicle() {
               </span>
             </div>
             <p className="subtitle">
-              Rangkuman lengkap strategi trading meme coin ala @obicle — dari setup
-              teknikal, risk management, sampai sistem journaling — dirapikan biar enak
+              Rangkuman lengkap strategi trading meme coin ala @obicle - dari setup
+              teknikal, risk management, sampai sistem journaling - dirapikan biar enak
               dibaca ulang.
             </p>
             <div className="disclaimer">
               ⚠ konten ini adalah rangkuman edukasi/strategi milik pembuat thread
               aslinya (obicle). trading crypto &amp; meme coin berisiko tinggi, termasuk
-              potensi rugi total modal — bukan rekomendasi finansial.
+              potensi rugi total modal - bukan rekomendasi finansial.
             </div>
             <Signature />
           </div>
@@ -96,18 +96,18 @@ export default function DegenTradingObicle() {
             <div className="eyebrow">
               <span className="n">01</span> / Tools
             </div>
-            <h2>Trade Terminal — Padre</h2>
+            <h2>Trade Terminal - Padre</h2>
             <p>Platform trading yang dipakai obicle karena sifatnya all-in-one. Fitur unggulannya:</p>
             <ul className="list">
               <li>UI ringan dan smooth</li>
               <li>
-                <strong>Wallet Tracker</strong> — bisa melacak hingga 10.000 wallet
+                <strong>Wallet Tracker</strong> - bisa melacak hingga 10.000 wallet
                 sekaligus, termasuk menandai wallet yang diikuti saat membeli koin (ikon
                 wallet kuning)
               </li>
               <li>Deteksi avatar/meme yang di-reuse atau di-recycle (ditandai ikon "!")</li>
               <li>
-                <strong>Alpha Group Tracker</strong> — bisa mengikuti call dari grup alpha
+                <strong>Alpha Group Tracker</strong> - bisa mengikuti call dari grup alpha
                 tanpa perlu join, gratis
               </li>
               <li>Info paid/boost status di Dexscreener langsung dari platform</li>
@@ -173,7 +173,7 @@ export default function DegenTradingObicle() {
             </ul>
             <div className="callout warn">
               <span className="lbl">Kunci konfirmasi</span>
-              Harus ada <strong>Displacement</strong> — dorongan harga yang kuat dan
+              Harus ada <strong>Displacement</strong> - dorongan harga yang kuat dan
               agresif dengan momentum besar, bukan sekadar sentuhan tipis ke level
               tersebut.
             </div>
@@ -270,7 +270,7 @@ export default function DegenTradingObicle() {
             </p>
             <figure>
               <img src={IMG('img-08.jpg')} alt="Grail example" />
-              <figcaption>Contoh: Grail — sempat break bullish trend EMA-nya</figcaption>
+              <figcaption>Contoh: Grail - sempat break bullish trend EMA-nya</figcaption>
             </figure>
             <ol className="steps">
               <li>Masukkan koin tersebut ke Watch List</li>
@@ -284,7 +284,7 @@ export default function DegenTradingObicle() {
               <img src={IMG('img-09.png')} alt="Retest entry" />
             </figure>
             <p>
-              Contoh lain: <strong>Chuby Elephant</strong> — entry lebih awal (early),
+              Contoh lain: <strong>Chuby Elephant</strong> - entry lebih awal (early),
               tetap melakukan scale-out profit ketika terlihat tanda downtrend, hasil
               profit sekitar <strong>200%</strong>.
             </p>
@@ -358,7 +358,7 @@ export default function DegenTradingObicle() {
             <h2>Trading Journal</h2>
             <p>
               Journal mengubah cara trading obicle dari sering rugi &amp; emosional
-              menjadi lebih konsisten &amp; tenang — karena{' '}
+              menjadi lebih konsisten &amp; tenang - karena{' '}
               <strong>trading itu 80% psikologi, 20% strategi.</strong> Journal adalah
               cermin harian untuk melihat kesalahan tanpa emosi. Format sederhana,
               cukup 5 kolom, diisi 5–7 menit/hari (Sheets/Excel/Notion):
@@ -382,7 +382,7 @@ export default function DegenTradingObicle() {
                   <td>3. Alasan Masuk</td>
                   <td>
                     Detail alasan entry (misal: EMA 100 + engulfing candle di 5M +
-                    volume naik) — cek apakah beneran ikut aturan atau cuma FOMO
+                    volume naik) - cek apakah beneran ikut aturan atau cuma FOMO
                   </td>
                 </tr>
                 <tr>
@@ -425,10 +425,10 @@ export default function DegenTradingObicle() {
 
             <h3>Tips agar journaling tidak berhenti di hari ke-3</h3>
             <ul className="list">
-              <li>Isi malam hari sebelum tidur — jadikan rutinitas</li>
+              <li>Isi malam hari sebelum tidur - jadikan rutinitas</li>
               <li>Review 1x seminggu untuk melihat pola kesalahan</li>
               <li>Jangan menghakimi diri sendiri, cukup catat fakta</li>
-              <li>Mulai kecil dulu — 3 trade sehari saja</li>
+              <li>Mulai kecil dulu - 3 trade sehari saja</li>
             </ul>
             <div className="callout tip">
               Saran untuk pemula: mulai malam ini, buat 1 kolom saja dulu ("Alasan
@@ -464,7 +464,7 @@ export default function DegenTradingObicle() {
             </p>
             <p>
               Titik baliknya adalah ketika menemukan komunitas{' '}
-              <strong>@EnclaviumFNF</strong> melalui link FCFS — di sana ia belajar
+              <strong>@EnclaviumFNF</strong> melalui link FCFS - di sana ia belajar
               screening koin, trading di DEX, hingga DLMM Liquidity Provider, sampai
               akhirnya menemukan edge/gaya trading sendiri yang dipakai hingga sekarang.
             </p>
@@ -476,14 +476,14 @@ export default function DegenTradingObicle() {
             </div>
             <h2>Tips Agar Tidak Roundtrip</h2>
             <ul className="list">
-              <li>Tentukan target profit harian (misal Rp 5 juta) — setelah tercapai, stop dan tutup chart</li>
+              <li>Tentukan target profit harian (misal Rp 5 juta) - setelah tercapai, stop dan tutup chart</li>
               <li>
                 Biasakan <strong>Take Profit</strong>, bukan "Take Picture" profit
                 (screenshot doang tanpa realisasi)
               </li>
               <li>
                 Kejar profit konsisten 30–50% per trade, dikumpulkan sedikit demi
-                sedikit — daripada berharap perkalian besar tapi berujung rekt
+                sedikit - daripada berharap perkalian besar tapi berujung rekt
               </li>
               <li>Stop revenge trade setelah lose streak dalam 1 hari</li>
               <li>Stop overtrade dan greedy</li>
@@ -522,14 +522,14 @@ export default function DegenTradingObicle() {
             </figure>
 
             <ol className="steps">
-              <li>Cek HTF (higher time frame) — di sini pakai TF 15m. Harga menyentuh EMA 50 dan RSI bottoming.</li>
+              <li>Cek HTF (higher time frame) - di sini pakai TF 15m. Harga menyentuh EMA 50 dan RSI bottoming.</li>
             </ol>
             <figure>
               <img src={IMG('img-14.jpg')} alt="HTF check" />
             </figure>
 
             <ol className="steps" start="2">
-              <li>Pindah ke TF lebih kecil (5m) — harga menyentuh EMA 100 dan RSI juga bottoming, mulai setup.</li>
+              <li>Pindah ke TF lebih kecil (5m) - harga menyentuh EMA 100 dan RSI juga bottoming, mulai setup.</li>
             </ol>
             <figure>
               <img src={IMG('img-15.jpg')} alt="LTF setup" />
@@ -558,7 +558,7 @@ export default function DegenTradingObicle() {
 
             <ol className="steps" start="6">
               <li>
-                Take Profit — kembali ke preferensi masing-masing: untuk scalping
+                Take Profit - kembali ke preferensi masing-masing: untuk scalping
                 30–50% sudah oke, atau jika yakin bisa set TP di Higher High (ATH)
                 terakhir.
               </li>
@@ -580,7 +580,7 @@ export default function DegenTradingObicle() {
               psikologi).
             </p>
 
-            <h3>STEP 1 — Export &amp; Compile Semua Trade Minggu Ini</h3>
+            <h3>STEP 1 - Export &amp; Compile Semua Trade Minggu Ini</h3>
             <p>Filter journal berdasarkan tanggal, ambil semua trade 7 hari terakhir, salin ke sheet baru "Weekly Review". Kolom wajib:</p>
             <div className="pill-grid">
               <div className="pill">Tanggal &amp; Jam</div>
@@ -593,7 +593,7 @@ export default function DegenTradingObicle() {
               <div className="pill">Setup</div>
             </div>
 
-            <h3>STEP 2 — Hitung Metrik Kunci</h3>
+            <h3>STEP 2 - Hitung Metrik Kunci</h3>
             <ul className="list">
               <li>Winrate minggu ini (%)</li>
               <li>Total P/L minggu ini</li>
@@ -603,7 +603,7 @@ export default function DegenTradingObicle() {
               <li>% trade yang dipengaruhi emosi (FOMO/revenge)</li>
             </ul>
 
-            <h3>STEP 3 — Jawab 5 Pertanyaan Wajib</h3>
+            <h3>STEP 3 - Jawab 5 Pertanyaan Wajib</h3>
             <ul className="list">
               <li>Setup mana yang paling profit minggu ini?</li>
               <li>Setup mana yang paling sering loss?</li>
@@ -612,7 +612,7 @@ export default function DegenTradingObicle() {
               <li>Apa yang dilakukan berbeda dibanding minggu lalu?</li>
             </ul>
 
-            <h3>STEP 4 — Lihat Pattern 3 Minggu Terakhir</h3>
+            <h3>STEP 4 - Lihat Pattern 3 Minggu Terakhir</h3>
             <ul className="list">
               <li>Selalu loss di akhir pekan?</li>
               <li>Selalu loss di jam tertentu?</li>
@@ -621,19 +621,19 @@ export default function DegenTradingObicle() {
               <li>Revenge trade muncul setelah 2 loss beruntun?</li>
             </ul>
 
-            <h3 className="bear">STEP 5 — Drop 1 Setup Paling Merugikan</h3>
+            <h3 className="bear">STEP 5 - Drop 1 Setup Paling Merugikan</h3>
             <div className="callout stop">
               "Setup chase volume spike di meme baru tanpa cek smart money wallet &amp;
               konfirmasi entry → drop total mulai minggu ini."
             </div>
 
-            <h3 className="bull">STEP 6 — Scale Up 1 Setup Paling Konsisten</h3>
+            <h3 className="bull">STEP 6 - Scale Up 1 Setup Paling Konsisten</h3>
             <div className="callout tip">
               "Setup EMA 50/100/200 + Stoch RSI oversold + Runner Today → naikkan risk
               dari 1% jadi 1.5% mulai minggu depan."
             </div>
 
-            <h3>STEP 7 — 3 Adjustment untuk Minggu Depan</h3>
+            <h3>STEP 7 - 3 Adjustment untuk Minggu Depan</h3>
             <ul className="list">
               <li>Max trade per hari = 4 (bukan 7)</li>
               <li>Kalau sudah +150% hari ini → stop trading (no greed)</li>

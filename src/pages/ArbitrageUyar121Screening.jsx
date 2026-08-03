@@ -57,13 +57,13 @@ export default function ArbitrageUyar121Screening() {
               </span>
             </div>
             <p className="subtitle">
-              #2: Lanjutan dari Arbitrage From Zero #1 — workflow lengkap cara screening
+              #2: Lanjutan dari Arbitrage From Zero #1 - workflow lengkap cara screening
               arbitrage opportunity, dari nyari token volatile sampai milih DEX
               aggregator buat eksekusi.
             </p>
             <div className="disclaimer">
               ⚠ konten ini adalah rangkuman edukasi/strategi milik pembuat thread
-              aslinya (@Uyar121). arbitrage &amp; bridging antar-chain tetap berisiko —
+              aslinya (@Uyar121). arbitrage &amp; bridging antar-chain tetap berisiko -
               bukan rekomendasi finansial.
             </div>
             <figure>
@@ -83,12 +83,12 @@ export default function ArbitrageUyar121Screening() {
             </p>
             <ul className="list">
               <li>
-                <strong>Pantau Top Gainer &amp; Top Loser</strong> — cek token apa aja
+                <strong>Pantau Top Gainer &amp; Top Loser</strong> - cek token apa aja
                 yang lagi ditarik naik atau dibanting turun. Setting filter 24
                 hours/1 hours, Top 1000 atau All Coins
               </li>
               <li>
-                <strong>Filter Persentase Change</strong> — masuk ke menu Cryptocurrency
+                <strong>Filter Persentase Change</strong> - masuk ke menu Cryptocurrency
                 &gt; All Coins. Filter token dengan kenaikan/penurunan: +50%, 10% s.d
                 50%, atau -50%, dan -10% s.d -50%
               </li>
@@ -106,22 +106,22 @@ export default function ArbitrageUyar121Screening() {
             <p>Cek dulu kriteria wajib ini sebelum eksekusi:</p>
             <ol className="steps">
               <li>
-                <strong>Multi-market/Multi-chain</strong> — token harus ada di minimal 2
+                <strong>Multi-market/Multi-chain</strong> - token harus ada di minimal 2
                 tempat berbeda (misal: ada di Base dan Solana, atau ada di DEX dan CEX
                 seperti Gate.io atau KuCoin)
               </li>
               <li>
-                <strong>Cek Selisih Harga</strong> — bandingkan input &amp; output di
+                <strong>Cek Selisih Harga</strong> - bandingkan input &amp; output di
                 kedua pasar. Modal $100 di DEX Base dapet berapa, kalau di-swap di DEX
                 Solana dapet berapa. Ada selisih yang nutup modal? Lanjut
               </li>
               <li>
-                <strong>Cek Tool Bridge &amp; Estimasi</strong> — cari jembatan buat
+                <strong>Cek Tool Bridge &amp; Estimasi</strong> - cari jembatan buat
                 mindahin tokennya, tes rutenya, cek gas fee, platform fee, dan berapa
                 lama waktu pengirimannya
               </li>
               <li>
-                <strong>(Optional tapi penting) Intip Tx orang lain</strong> — cek
+                <strong>(Optional tapi penting) Intip Tx orang lain</strong> - cek
                 explorer bridge (misal LayerZeroScan). Kalau transaksi orang lain sukses
                 dan gap harganya masih awet, baru ikut eksekusi
               </li>
@@ -146,16 +146,16 @@ export default function ArbitrageUyar121Screening() {
             </p>
             <ul className="list">
               <li>
-                <strong>LayerZeroScan &amp; Wormholescan</strong> — mantau transaksi
+                <strong>LayerZeroScan &amp; Wormholescan</strong> - mantau transaksi
                 yang lagi jalan dari chain asal ke chain tujuan. Kalau nemu token yang
                 asing tapi sering di-bridge, langsung cek input-output DEX di kedua
                 chain tersebut
               </li>
               <li>
-                <strong>Range Explorer (The Ultimate Tool)</strong> — salah satu tool
+                <strong>Range Explorer (The Ultimate Tool)</strong> - salah satu tool
                 paling powerful, bisa filter berdasarkan protokol kayak LayerZero,
                 Wormhole, IBC, Axelar, Debridge, hingga Snowbridge-nya ekosistem
-                Polkadot. Bisa juga filter berdasarkan Asset — tinggal masukin ticker
+                Polkadot. Bisa juga filter berdasarkan Asset - tinggal masukin ticker
                 atau contract address token yang diincar, semua history transaksi
                 bridge orang lain pakai token itu langsung muncul
               </li>
@@ -169,7 +169,7 @@ export default function ArbitrageUyar121Screening() {
               <strong>LayerZero/Stargate</strong>. Kalau lewat Range Explorer nemu
               rute di <strong>Wormhole</strong> (guardian network), <strong>Axelar</strong>{' '}
               (validator set), atau protokol lain, mereka punya mekanisme verifikasi
-              sendiri yang beda dan belum dibahas di sini — jangan asumsikan "udah
+              sendiri yang beda dan belum dibahas di sini - jangan asumsikan "udah
               dicek DVN-nya aman" berlaku untuk semua bridge. Riset dulu status
               keamanan protokolnya masing-masing sebelum eksekusi.
             </div>
@@ -182,7 +182,7 @@ export default function ArbitrageUyar121Screening() {
             <h2>Defillama</h2>
             <p>
               Gimana kalau dapet info token volatile di chain yang gak familiar?
-              Kasusnya kayak $LYX kemarin — DEX-nya di Ethereum diketahui, tapi buta
+              Kasusnya kayak $LYX kemarin - DEX-nya di Ethereum diketahui, tapi buta
               sama DEX di LUKSO Mainnet. Solusinya ke Defillama:
             </p>
             <ol className="steps">
@@ -198,7 +198,7 @@ export default function ArbitrageUyar121Screening() {
             </div>
             <figure>
               <img src={IMG('img-04-defillama-rhea.jpg')} alt="Protocol rankings Rhea Finance di Defillama" />
-              <figcaption>Rhea — DEX di NEAR</figcaption>
+              <figcaption>Rhea - DEX di NEAR</figcaption>
             </figure>
           </section>
 
@@ -209,7 +209,7 @@ export default function ArbitrageUyar121Screening() {
             <h2>Pemilihan CEX: Jangan Cuma Asal Nyari yang Listing!</h2>
             <p>
               Gate.io sering dipakai buat nyari token-token arbit karena rajin banget
-              listing token micin sampai token baru (kayak $LYX dan $LINGO kemarin) —
+              listing token micin sampai token baru (kayak $LYX dan $LINGO kemarin) -
               ladang nemu gap harganya subur banget di sana.
             </p>
             <div className="callout stop">
@@ -221,7 +221,7 @@ export default function ArbitrageUyar121Screening() {
             </div>
             <p>
               <strong>Kasus nyata ($LYX):</strong> meskipun $LYX ada di Gate.io,
-              eksekusi lebih difokuskan ke <strong>KuCoin</strong> — karena antrean
+              eksekusi lebih difokuskan ke <strong>KuCoin</strong> - karena antrean
               Bid/Ask di KuCoin jauh lebih tebal dibanding Gate.io.
             </p>
           </section>
@@ -239,7 +239,7 @@ export default function ArbitrageUyar121Screening() {
 
             <div className="rule-card">
               <span className="tag">Defillama Meta DEX Aggregator</span>
-              <strong>Kelebihan:</strong> loading-nya gesit banget saat eksekusi —
+              <strong>Kelebihan:</strong> loading-nya gesit banget saat eksekusi -
               kecepatan adalah kunci di dunia arbit sebelum gap-nya ditutup orang
               lain/bot. <strong>Kelemahan:</strong> kadang rute awal yang belum
               dicentang verified suka bikin transaksi revert (gagal).
@@ -252,7 +252,7 @@ export default function ArbitrageUyar121Screening() {
             <div className="rule-card">
               <span className="tag">Jumper (.exchange)</span>
               <strong>Kelebihan:</strong> paling lengkap, chain-nya banyak, dan bagus
-              buat naikin volume transaksi (bisa sekalian nyari reward/airdrop) —
+              buat naikin volume transaksi (bisa sekalian nyari reward/airdrop) -
               biasa dipakai buat geser-geser stablecoin. <strong>Kelemahan:</strong> di
               beberapa device, loading-nya kadang agak lambat.
             </div>
@@ -264,7 +264,7 @@ export default function ArbitrageUyar121Screening() {
             <div className="rule-card">
               <span className="tag">Oku Trade (Andalan buat Simulasi)</span>
               Dipakai khusus buat <strong>Pre-Simulation Outcome</strong> (ngecek
-              transaksi ini bakal sukses atau zonk). Contoh: swap 100 USDC ke Token A —
+              transaksi ini bakal sukses atau zonk). Contoh: swap 100 USDC ke Token A -
               di Defillama &amp; Jumper hasilnya kelihatan manis (dapet 1000 Token A),
               tapi pas dicek di Oku hasilnya cuma 900 Token A dan ada peringatan "DEX
               lain reverted". Kalau nekat eksekusi di Defillama/Jumper, transaksi
@@ -279,7 +279,7 @@ export default function ArbitrageUyar121Screening() {
             </figure>
 
             <div className="callout tip">
-              Semua screening ini masih dilakukan 100% secara manual — belum pake AI
+              Semua screening ini masih dilakukan 100% secara manual - belum pake AI
               Agent atau Bot karena masih tahap belajar. Tapi terbukti, cara manual pun
               masih sangat bisa menghasilkan asal rajin dan jeli.
             </div>

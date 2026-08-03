@@ -58,14 +58,14 @@ export default function ArbitrageUyar121() {
               </span>
             </div>
             <p className="subtitle">
-              #1: Menguasai LayerZero dan Stargate — perjalanan belajar cross-chain
+              #1: Menguasai LayerZero dan Stargate - perjalanan belajar cross-chain
               arbitrage dari modal $20 sampai tumbuh 50x lipat, murni dari trial-error
               sendiri.
             </p>
             <div className="disclaimer">
               ⚠ konten ini adalah rangkuman edukasi/strategi milik pembuat thread
-              aslinya (@Uyar121). arbitrage &amp; bridging antar-chain tetap berisiko —
-              termasuk potensi dana nyangkut (stuck in flight) — bukan rekomendasi
+              aslinya (@Uyar121). arbitrage &amp; bridging antar-chain tetap berisiko -
+              termasuk potensi dana nyangkut (stuck in flight) - bukan rekomendasi
               finansial.
             </div>
             <figure>
@@ -88,7 +88,7 @@ export default function ArbitrageUyar121() {
               Akhirnya mutusin buat putar haluan: belajar <strong>cross-chain
               arbitrage</strong> bener-bener dari nol, gak pake mentor, cuma modal nekat
               dan trial-error. Maret 2026 mulai lagi dengan modal receh <strong>$20</strong>{' '}
-              — per Mei 2026 portfolio udah tembus <strong>$1.100+</strong>, tumbuh 50x
+              - per Mei 2026 portfolio udah tembus <strong>$1.100+</strong>, tumbuh 50x
               lipat dalam kurang dari 3 bulan.
             </p>
             <figure>
@@ -97,15 +97,15 @@ export default function ArbitrageUyar121() {
             </figure>
             <ul className="list">
               <li>
-                <strong>Modal receh ramah kantong</strong> — bisa dimulai bahkan dengan
+                <strong>Modal receh ramah kantong</strong> - bisa dimulai bahkan dengan
                 modal seadanya
               </li>
               <li>
-                <strong>Pace-nya slow tapi sustainable</strong> — gak perlu jantungan
+                <strong>Pace-nya slow tapi sustainable</strong> - gak perlu jantungan
                 mantengin chart tiap detik
               </li>
               <li>
-                <strong>Efek bola salju</strong> — makin besar modal/portfolio, makin
+                <strong>Efek bola salju</strong> - makin besar modal/portfolio, makin
                 gampang nemuin profit yang kerasa
               </li>
             </ul>
@@ -127,13 +127,13 @@ export default function ArbitrageUyar121() {
             </div>
             <p>
               Walaupun kelihatan lambat, strategi ini jauh lebih sustainable dibanding
-              trading biasa — karena <strong>90% portfolio selalu dalam
+              trading biasa - karena <strong>90% portfolio selalu dalam
               stablecoin</strong>. Market ijo royo-royo, orang FOMO kejar pump, tetap
               santai. Market merah darah, orang panik jual rugi, tetap chill.
             </p>
             <div className="callout tip">
               Gak ada drama naik-turun yang bikin deg-degan. Jiwa tenang, pikiran
-              jernih, tidur pun nyenyak setiap malam — bukan cuma cari cuan, tapi juga
+              jernih, tidur pun nyenyak setiap malam - bukan cuma cari cuan, tapi juga
               ketenangan mental.
             </div>
           </section>
@@ -151,11 +151,11 @@ export default function ArbitrageUyar121() {
             <p>Ada dua tools yang wajib dikuasai buat memulai:</p>
             <ul className="list">
               <li>
-                <strong>LayerZero</strong> — protokol yang menghubungkan 80+ jaringan
+                <strong>LayerZero</strong> - protokol yang menghubungkan 80+ jaringan
                 blockchain
               </li>
               <li>
-                <strong>Stargate Finance</strong> — aplikasi paling gampang dan
+                <strong>Stargate Finance</strong> - aplikasi paling gampang dan
                 user-friendly buat pakai teknologi LayerZero ini
               </li>
             </ul>
@@ -198,17 +198,17 @@ export default function ArbitrageUyar121() {
             </p>
             <figure>
               <img src={IMG('img-02-rave-search.jpg')} alt="Pencarian token RAVE di LayerZeroScan" />
-              <figcaption>Contoh: token RAVE ada di 3 jaringan sekaligus — Ethereum, Base, dan BSC</figcaption>
+              <figcaption>Contoh: token RAVE ada di 3 jaringan sekaligus - Ethereum, Base, dan BSC</figcaption>
             </figure>
 
             <h3>2. Menu "Ecosystem" → Application vs OFT</h3>
             <ul className="list">
               <li>
-                <strong>Application</strong> — biasanya bridge resmi bawaan projeknya.
+                <strong>Application</strong> - biasanya bridge resmi bawaan projeknya.
                 Satu Application bisa punya lebih dari satu OFT yang bisa dibridge
               </li>
               <li>
-                <strong>OFT (Omnichain Fungible Token)</strong> — teknologi yang bikin
+                <strong>OFT (Omnichain Fungible Token)</strong> - teknologi yang bikin
                 sebuah token bisa pindah antar-jaringan dengan mulus
               </li>
             </ul>
@@ -228,9 +228,9 @@ export default function ArbitrageUyar121() {
             <p>Biasanya gap harga terjadi karena beberapa pemicu:</p>
             <ul className="list">
               <li>Token baru listing CEX</li>
-              <li>Token volatile — lagi ada pump atau dump parah di salah satu jaringan</li>
-              <li>Pasca hack/exploit — kondisi panik biasanya bikin harga timpang</li>
-              <li>Token dormant ("mati") — udah jarang ditransaksikan tapi masih ada likuiditasnya</li>
+              <li>Token volatile - lagi ada pump atau dump parah di salah satu jaringan</li>
+              <li>Pasca hack/exploit - kondisi panik biasanya bikin harga timpang</li>
+              <li>Token dormant ("mati") - udah jarang ditransaksikan tapi masih ada likuiditasnya</li>
             </ul>
             <div className="rule-card">
               <span className="tag">Tips Praktis Hunting</span>
@@ -248,14 +248,14 @@ export default function ArbitrageUyar121() {
             </div>
             <h2 className="bear">Catatan Penting Sebelum Bridge</h2>
             <p>
-              Harus tahu apa itu <strong>DVN (Decentralized Verifier Network)</strong> —
+              Harus tahu apa itu <strong>DVN (Decentralized Verifier Network)</strong> -
               jaringan yang bertugas memverifikasi pesan bridge di LayerZero.
             </p>
             <div className="callout stop">
               Semenjak ada kasus exploit rsETH KelpDAO, token yang masih pake{' '}
               <strong>DVN 1/1</strong> udah gak bakal diproses lagi. Makin banyak
               DVN-nya (misal 2/2 atau 3/3), transaksinya makin aman. Project aktif
-              biasanya udah upgrade ke DVN baru — tapi token dormant biasanya gak
+              biasanya udah upgrade ke DVN baru - tapi token dormant biasanya gak
               di-upgrade sama developernya. Maksa bridge token mati ini bisa bikin
               transaksi nyangkut selamanya (Stuck In Flight).
             </div>
@@ -269,7 +269,7 @@ export default function ArbitrageUyar121() {
               <li>Selalu tes bridge pake nominal kecil dulu (tes ombak)</li>
               <li>Hitung matang-matang total biaya gas (fee)</li>
               <li>
-                Cek "Time Taken" di LayerZeroScan — kalau estimasi waktu udah lewat
+                Cek "Time Taken" di LayerZeroScan - kalau estimasi waktu udah lewat
                 tapi statusnya masih In Flight, fix itu nyangkut
               </li>
             </ul>
@@ -282,7 +282,7 @@ export default function ArbitrageUyar121() {
             <h2>Risiko &amp; Tips Pemula</h2>
             <p>Gak ada yang instan dan bebas risiko di dunia kripto. Harus paham:</p>
             <ul className="list">
-              <li>Cek teliti input dan output harga — lebih disaranin pakai DEX yang ada mode "simulate"</li>
+              <li>Cek teliti input dan output harga - lebih disaranin pakai DEX yang ada mode "simulate"</li>
               <li>Likuiditas token sering kali tipis (terutama token dormant)</li>
               <li>
                 <strong>Jangan pernah all-in.</strong>
@@ -291,7 +291,7 @@ export default function ArbitrageUyar121() {
             <div className="callout tip">
               Tips buat yang baru mau mulai: mulai dari modal kecil (kayak $20), rajin
               gulung profitnya (compounding), dan yang terpenting: sabar. Ini permainan
-              maraton, bukan lari sprint. Gak ada hype berlebihan — real process, slow
+              maraton, bukan lari sprint. Gak ada hype berlebihan - real process, slow
               but sustainable.
             </div>
           </section>

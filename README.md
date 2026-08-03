@@ -1,8 +1,8 @@
 # Ananta Notes
 
-**Catatan belajar Web3** — kumpulan thread, artikel, dan rangkuman dari mentor, trader, dan sumber-sumber belajar Web3 lainnya. Dikurasi dan disusun ulang biar enak dibaca dan gampang dicari lagi kalau butuh referensi.
+**Catatan belajar Web3** - kumpulan thread, artikel, dan rangkuman dari mentor, trader, dan sumber-sumber belajar Web3 lainnya. Dikurasi dan disusun ulang biar enak dibaca dan gampang dicari lagi kalau butuh referensi.
 
-Dibangun pakai **React + Vite** (SPA, client-side routing) biar cepat dan responsif di PC maupun HP — tiap catatan adalah komponen React sendiri, gambar di-serve sebagai file statis terpisah (bukan base64 inline) supaya bisa di-cache browser. Ada toggle tema terang/gelap yang tersimpan otomatis.
+Dibangun pakai **React + Vite** (SPA, client-side routing) biar cepat dan responsif di PC maupun HP - tiap catatan adalah komponen React sendiri, gambar di-serve sebagai file statis terpisah (bukan base64 inline) supaya bisa di-cache browser. Ada toggle tema terang/gelap yang tersimpan otomatis.
 
 ## Isi
 
@@ -52,11 +52,11 @@ npm run preview   # preview hasil build
 1. Import repo ini di https://vercel.com/new
 2. Framework preset: **Vite** (otomatis terdeteksi)
 3. Build command: `npm run build`, Output directory: `dist`
-4. Deploy — setiap push ke `main` otomatis re-deploy.
+4. Deploy - setiap push ke `main` otomatis re-deploy.
 
 ## Nambah catatan baru
 
-1. Buat komponen baru di `src/pages/NamaCatatan.jsx`, import `../styles/note-page.css`, dan bungkus isinya dengan `<div className="note-page">` — style umum (layout, sidebar, callout, tabel, dst) sudah otomatis kepakai dan ikut tema terang/gelap.
+1. Buat komponen baru di `src/pages/NamaCatatan.jsx`, import `../styles/note-page.css`, dan bungkus isinya dengan `<div className="note-page">` - style umum (layout, sidebar, callout, tabel, dst) sudah otomatis kepakai dan ikut tema terang/gelap.
 2. Simpan gambar/asset (termasuk avatar penulis) di `public/notes/assets/nama-catatan/`.
 3. Tambahkan route-nya di `src/App.jsx` dan entrinya (termasuk field `avatar`) di array `notes` pada `src/notes.js` biar muncul di landing page.
 4. Kalau catatan butuh elemen visual unik yang belum ada di `note-page.css` (misal candlestick signature-nya @obicle), taruh style tambahan itu di file CSS terpisah khusus catatan tsb, jangan modifikasi `note-page.css` langsung.
