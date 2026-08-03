@@ -95,6 +95,14 @@ export default function ArbitrageUyar121Wormhole() {
                 <strong>Wormhole NTT</strong> (Native Token Transfer)
               </li>
             </ol>
+            <div className="callout warn">
+              <span className="lbl">Catatan editor</span>
+              Thread ini fokus tutorialnya di Portal Bridge &amp; Legacy Portal
+              Bridge. Wormhole NTT cuma disinggung sebagai kategori filter di
+              Wormholescan (section 06) - belum ada langkah "cara pakai NTT" khusus di
+              sini. Kalau nemu token yang jalurnya murni NTT, riset tambahan di luar
+              thread ini masih diperlukan.
+            </div>
           </section>
 
           <section className="chapter" id="s2">

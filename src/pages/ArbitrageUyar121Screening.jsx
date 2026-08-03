@@ -173,6 +173,12 @@ export default function ArbitrageUyar121Screening() {
               dicek DVN-nya aman" berlaku untuk semua bridge. Riset dulu status
               keamanan protokolnya masing-masing sebelum eksekusi.
             </div>
+            <div className="callout tip">
+              <span className="lbl">Update</span>
+              Thread ini ditulis sebelum Chainlink CCIP dibahas terpisah di Part #4 -
+              sekarang toolkit explorer-nya nambah satu lagi: <strong>CCIP
+              Explorer</strong>, buat mantau transaksi yang lewat jalur Chainlink CCIP.
+            </div>
           </section>
 
           <section className="chapter" id="s4">

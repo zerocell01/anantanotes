@@ -263,6 +263,15 @@ export default function ArbitrageUyar121Ccip() {
                 <strong>CCIP Explorer</strong>
               </li>
             </ol>
+            <div className="callout tip">
+              <span className="lbl">Catatan editor</span>
+              Beda dengan Part #1 (DVN-check) dan Part #3 (Attestation-check +
+              Governor-check) yang punya langkah manual wajib dicek <em>sebelum</em>{' '}
+              bridge, CCIP gak dijelasin punya check setara di sini - Risk Management
+              Network-nya jalan otomatis, dan CCIP Explorer di atas cuma buat pantau{' '}
+              <em>setelah</em> transaksi jalan. Kalau ternyata CCIP juga punya semacam
+              status/limit yang perlu dicek duluan, itu belum ke-cover di thread ini.
+            </div>
           </section>
 
           <section className="chapter" id="s7">
