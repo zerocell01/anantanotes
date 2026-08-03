@@ -32,4 +32,15 @@ export const notes = [
     avatar: '/notes/assets/arbitrage-uyar121/avatar.jpg',
     accent: 'purple',
   },
+  {
+    slug: 'arbitrage-uyar121-wormhole',
+    title: 'Arbitrage From Zero #3',
+    author: '@Uyar121',
+    authorUrl: 'https://twitter.com/Uyar121',
+    topic: 'Arbitrage · Wormhole',
+    desc: 'Bedah bridge tool Wormhole — Portal Bridge, Token Verifier, Wormholescan, sampai jebakan menu Governor, dari @Uyar121.',
+    href: '/notes/arbitrage-uyar121-wormhole',
+    avatar: '/notes/assets/arbitrage-uyar121/avatar.jpg',
+    accent: 'purple',
+  },
 ]

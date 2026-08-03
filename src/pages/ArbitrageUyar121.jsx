@@ -68,6 +68,9 @@ export default function ArbitrageUyar121() {
               termasuk potensi dana nyangkut (stuck in flight) — bukan rekomendasi
               finansial.
             </div>
+            <figure>
+              <img src={IMG('img-00-cover.jpg')} alt="Arbitrage from Zero #1: LayerZero" />
+            </figure>
           </div>
 
           <section className="chapter" id="s1">

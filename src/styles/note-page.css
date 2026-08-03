@@ -264,6 +264,17 @@
 .note-page strong {
   color: var(--text);
 }
+.note-page p a,
+.note-page li a {
+  color: var(--bull);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--bull) 45%, transparent);
+  text-underline-offset: 2px;
+}
+.note-page p a:hover,
+.note-page li a:hover {
+  text-decoration-color: var(--bull);
+}
 
 .note-page ul.list {
   margin: 0 0 16px;
