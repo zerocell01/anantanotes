@@ -20,7 +20,7 @@ export default function ArbitrageUyar121Screening() {
   const activeId = useActiveSection(SECTION_IDS)
 
   return (
-    <div className="note-page">
+    <div className="note-page accent-purple">
       <div className="grid-bg" />
       <div className="layout">
         <aside>
@@ -163,6 +163,16 @@ export default function ArbitrageUyar121Screening() {
             <figure>
               <img src={IMG('img-03-range-explorer.jpg')} alt="Range Explorer dengan filter protokol bridge" />
             </figure>
+            <div className="callout warn">
+              <span className="lbl">Catatan editor</span>
+              Cek <strong>DVN</strong> di Part #1 itu spesifik buat bridge lewat{' '}
+              <strong>LayerZero/Stargate</strong>. Kalau lewat Range Explorer nemu
+              rute di <strong>Wormhole</strong> (guardian network), <strong>Axelar</strong>{' '}
+              (validator set), atau protokol lain, mereka punya mekanisme verifikasi
+              sendiri yang beda dan belum dibahas di sini — jangan asumsikan "udah
+              dicek DVN-nya aman" berlaku untuk semua bridge. Riset dulu status
+              keamanan protokolnya masing-masing sebelum eksekusi.
+            </div>
           </section>
 
           <section className="chapter" id="s4">

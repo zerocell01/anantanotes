@@ -8,6 +8,7 @@ export const notes = [
     desc: 'Rangkuman thread belajar trading degen / memecoin dari @obicle.',
     href: '/notes/degen-trading-obicle',
     avatar: '/notes/assets/degen-trading-obicle/avatar.jpg',
+    accent: 'green',
   },
   {
     slug: 'arbitrage-uyar121',
@@ -18,6 +19,7 @@ export const notes = [
     desc: 'Menguasai LayerZero & Stargate — belajar cross-chain arbitrage dari modal $20 dari @Uyar121.',
     href: '/notes/arbitrage-uyar121',
     avatar: '/notes/assets/arbitrage-uyar121/avatar.jpg',
+    accent: 'purple',
   },
   {
     slug: 'arbitrage-uyar121-screening',
@@ -28,5 +30,6 @@ export const notes = [
     desc: 'Screening Mastery — workflow lengkap nyari arbitrage opportunity dari Coingecko sampai DEX aggregator, dari @Uyar121.',
     href: '/notes/arbitrage-uyar121-screening',
     avatar: '/notes/assets/arbitrage-uyar121/avatar.jpg',
+    accent: 'purple',
   },
 ]

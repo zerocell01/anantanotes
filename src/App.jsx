@@ -7,8 +7,9 @@ import { ThemeProvider } from './ThemeContext.jsx'
 import ThemeToggle from './ThemeToggle.jsx'
 
 function NoteCard({ note }) {
+  const accentClass = note.accent ? `accent-${note.accent}` : ''
   return (
-    <Link className="note-card" to={note.href}>
+    <Link className={`note-card ${accentClass}`.trim()} to={note.href}>
       <div className="note-card-row">
         {note.avatar && <img className="note-avatar" src={note.avatar} alt={note.author} />}
         <div>

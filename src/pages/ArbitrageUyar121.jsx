@@ -21,7 +21,7 @@ export default function ArbitrageUyar121() {
   const activeId = useActiveSection(SECTION_IDS)
 
   return (
-    <div className="note-page">
+    <div className="note-page accent-purple">
       <div className="grid-bg" />
       <div className="layout">
         <aside>
