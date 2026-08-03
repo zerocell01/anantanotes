@@ -19,4 +19,14 @@ export const notes = [
     href: '/notes/arbitrage-uyar121',
     avatar: '/notes/assets/arbitrage-uyar121/avatar.jpg',
   },
+  {
+    slug: 'arbitrage-uyar121-screening',
+    title: 'Arbitrage From Zero #2',
+    author: '@Uyar121',
+    authorUrl: 'https://twitter.com/Uyar121',
+    topic: 'Arbitrage · Screening',
+    desc: 'Screening Mastery — workflow lengkap nyari arbitrage opportunity dari Coingecko sampai DEX aggregator, dari @Uyar121.',
+    href: '/notes/arbitrage-uyar121-screening',
+    avatar: '/notes/assets/arbitrage-uyar121/avatar.jpg',
+  },
 ]
