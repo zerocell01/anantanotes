@@ -2,13 +2,13 @@
 
 **Catatan belajar Web3** — kumpulan thread, artikel, dan rangkuman dari mentor, trader, dan sumber-sumber belajar Web3 lainnya. Dikurasi dan disusun ulang biar enak dibaca dan gampang dicari lagi kalau butuh referensi.
 
-Dibangun pakai **React + Vite** biar landing page-nya cepat dan responsif di PC maupun HP.
+Dibangun pakai **React + Vite** (SPA, client-side routing) biar cepat dan responsif di PC maupun HP — tiap catatan adalah komponen React sendiri, gambar di-serve sebagai file statis terpisah (bukan base64 inline) supaya bisa di-cache browser.
 
 ## Isi
 
 | Catatan | Sumber | Topik |
 |---|---|---|
-| [Degen Trading Thread](public/notes/degen-trading-obicle.html) | [@obicle](https://twitter.com/obicle) | Trading degen / memecoin |
+| [Degen Trading Thread](src/pages/DegenTradingObicle.jsx) | [@obicle](https://twitter.com/obicle) | Trading degen / memecoin |
 
 Daftar di atas bakal terus bertambah seiring catatan baru ditambahkan.
 
@@ -17,13 +17,17 @@ Daftar di atas bakal terus bertambah seiring catatan baru ditambahkan.
 ```
 anantanotes/
 ├── src/
-│   ├── App.jsx          # landing page (daftar catatan)
-│   ├── notes.js         # data/metadata semua catatan
+│   ├── App.jsx                     # landing page + routing
+│   ├── notes.js                    # data/metadata semua catatan
+│   ├── pages/
+│   │   ├── DegenTradingObicle.jsx  # halaman catatan (1 komponen per catatan)
+│   │   └── DegenTradingObicle.css  # style khusus catatan tsb (scoped)
 │   ├── main.jsx
-│   └── index.css
+│   └── index.css                   # style landing page + tema global
 ├── public/
-│   └── notes/           # isi tiap catatan/thread (1 file HTML statis per catatan)
-├── index.html           # entry Vite
+│   └── notes/assets/               # gambar/asset tiap catatan
+├── vercel.json                     # SPA rewrite untuk Vercel
+├── index.html                      # entry Vite
 └── package.json
 ```
 
@@ -45,5 +49,6 @@ npm run preview   # preview hasil build
 
 ## Nambah catatan baru
 
-1. Simpan catatan baru sebagai file HTML statis di `public/notes/`.
-2. Tambahkan entrinya ke array `notes` di `src/notes.js`.
+1. Buat komponen baru di `src/pages/NamaCatatan.jsx` (+ CSS-nya sendiri, scoped pakai wrapper class biar tidak bentrok dengan catatan lain).
+2. Simpan gambar/asset di `public/notes/assets/nama-catatan/`.
+3. Tambahkan route-nya di `src/App.jsx` dan entrinya di array `notes` pada `src/notes.js`.

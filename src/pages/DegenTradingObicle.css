@@ -1,0 +1,449 @@
+.note-degen {
+  --bg: #0b1210;
+  --surface: #111c19;
+  --surface-2: #16221e;
+  --border: #22322d;
+  --text: #e7efe9;
+  --muted: #8fa39a;
+  --bull: #33d17a;
+  --bull-dim: #1b3a2b;
+  --bear: #ff6161;
+  --bear-dim: #3a1e1e;
+  --amber: #f2b134;
+  --amber-dim: #3a2f14;
+  --mono: 'JetBrains Mono', monospace;
+  --display: 'Space Grotesk', sans-serif;
+  --body: 'IBM Plex Sans', sans-serif;
+}
+
+/* ---------- Layout ---------- */
+.note-degen .layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  max-width: 1240px;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .note-degen .layout {
+    grid-template-columns: 1fr;
+  }
+  .note-degen aside {
+    display: none;
+  }
+}
+
+/* ---------- Sidebar ---------- */
+.note-degen aside {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 32px 20px 40px 32px;
+  border-right: 1px solid var(--border);
+}
+.note-degen .back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: color 0.15s ease;
+}
+.note-degen .back-link:hover {
+  color: var(--bull);
+}
+.note-degen .brand {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.note-degen .brand strong {
+  color: var(--bull);
+}
+.note-degen aside h1 {
+  font-family: var(--display);
+  font-size: 19px;
+  margin: 0 0 24px;
+  line-height: 1.25;
+}
+.note-degen nav.toc a {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 13.5px;
+  padding: 7px 0;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease;
+}
+.note-degen nav.toc a:hover {
+  color: var(--text);
+}
+.note-degen nav.toc a .num {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--bull);
+  flex-shrink: 0;
+  width: 18px;
+}
+
+/* ---------- Hero ---------- */
+.note-degen .hero {
+  padding: 64px 48px 40px;
+  border-bottom: 1px solid var(--border);
+}
+@media (max-width: 900px) {
+  .note-degen .hero {
+    padding: 48px 24px 32px;
+  }
+}
+.note-degen .ticker {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--bull);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.note-degen .ticker::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--bull);
+  box-shadow: 0 0 8px var(--bull);
+}
+.note-degen h1.title {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 1.05;
+  margin: 0 0 14px;
+  letter-spacing: -0.01em;
+}
+.note-degen h1.title span {
+  color: var(--bull);
+}
+.note-degen .subtitle {
+  color: var(--muted);
+  font-size: 16px;
+  max-width: 640px;
+  margin: 0 0 32px;
+}
+.note-degen .disclaimer {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--amber);
+  background: var(--amber-dim);
+  border: 1px solid rgba(242, 177, 52, 0.35);
+  border-radius: 6px;
+  padding: 14px 16px;
+  max-width: 720px;
+  line-height: 1.6;
+}
+
+/* signature candlestick chart */
+.note-degen .signature {
+  margin-top: 36px;
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  height: 110px;
+}
+.note-degen .candle {
+  width: 9px;
+  background: var(--bull);
+  border-radius: 1px;
+  opacity: 0.85;
+}
+.note-degen .candle.down {
+  background: var(--bear);
+}
+
+/* ---------- Content ---------- */
+.note-degen main {
+  padding: 0 48px 100px;
+}
+@media (max-width: 900px) {
+  .note-degen main {
+    padding: 0 24px 80px;
+  }
+}
+
+.note-degen section.chapter {
+  padding-top: 56px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 48px;
+}
+.note-degen section.chapter:last-child {
+  border-bottom: none;
+}
+
+.note-degen .eyebrow {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.note-degen .eyebrow .n {
+  color: var(--bull);
+}
+
+.note-degen h2 {
+  font-family: var(--display);
+  font-size: clamp(24px, 3vw, 32px);
+  margin: 0 0 20px;
+  letter-spacing: -0.01em;
+}
+.note-degen h3 {
+  font-family: var(--display);
+  font-size: 18px;
+  margin: 32px 0 12px;
+  color: var(--text);
+}
+.note-degen h3.bear {
+  color: var(--bear);
+}
+.note-degen h3.bull {
+  color: var(--bull);
+}
+
+.note-degen p {
+  margin: 0 0 14px;
+  color: #d3ded7;
+  font-size: 15.5px;
+}
+.note-degen strong {
+  color: var(--text);
+}
+
+.note-degen ul.list {
+  margin: 0 0 16px;
+  padding-left: 0;
+  list-style: none;
+}
+.note-degen ul.list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 9px;
+  font-size: 15.5px;
+  color: #d3ded7;
+}
+.note-degen ul.list li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--bull);
+  font-weight: 700;
+}
+
+.note-degen ol.steps {
+  margin: 0 0 20px;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: step;
+}
+.note-degen ol.steps li {
+  counter-increment: step;
+  position: relative;
+  padding: 12px 16px 12px 48px;
+  margin-bottom: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 15px;
+}
+.note-degen ol.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--mono);
+  font-weight: 600;
+  color: var(--bg);
+  background: var(--bull);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.note-degen .callout {
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 18px 0;
+  font-size: 14.5px;
+  line-height: 1.6;
+  border: 1px solid;
+}
+.note-degen .callout.tip {
+  background: var(--bull-dim);
+  border-color: rgba(51, 209, 122, 0.35);
+  color: #cdeedb;
+}
+.note-degen .callout.warn {
+  background: var(--amber-dim);
+  border-color: rgba(242, 177, 52, 0.35);
+  color: #f4dfae;
+}
+.note-degen .callout.stop {
+  background: var(--bear-dim);
+  border-color: rgba(255, 97, 97, 0.35);
+  color: #ffd3d3;
+}
+.note-degen .callout .lbl {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 6px;
+  opacity: 0.85;
+}
+
+.note-degen figure {
+  margin: 22px 0;
+  text-align: center;
+}
+.note-degen figure img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.note-degen figcaption {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.note-degen .rule-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--bull);
+  border-radius: 6px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+.note-degen .rule-card .tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--bull);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.note-degen table.journal {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0 24px;
+  font-size: 14px;
+}
+.note-degen table.journal th {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--bg);
+  background: var(--bull);
+  padding: 10px 14px;
+}
+.note-degen table.journal td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  color: #d3ded7;
+  vertical-align: top;
+}
+.note-degen table.journal tr:nth-child(even) td {
+  background: var(--surface);
+}
+
+.note-degen .metric-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 20px;
+}
+.note-degen .metric {
+  font-family: var(--mono);
+  font-size: 13px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 14px;
+  color: var(--text);
+}
+.note-degen .metric b {
+  color: var(--bull);
+  display: block;
+  font-size: 17px;
+}
+
+.note-degen .pill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 16px 0 20px;
+}
+.note-degen .pill {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--muted);
+  font-family: var(--mono);
+}
+
+.note-degen hr.div {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 32px 0;
+}
+
+.note-degen footer {
+  padding: 40px 48px 60px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  text-align: center;
+}
+
+.note-degen ::selection {
+  background: var(--bull);
+  color: #04140c;
+}
+
+.note-degen ::-webkit-scrollbar {
+  width: 9px;
+}
+.note-degen ::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+.note-degen ::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}

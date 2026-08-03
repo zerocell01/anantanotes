@@ -1,19 +1,21 @@
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { notes } from './notes.js'
+import DegenTradingObicle from './pages/DegenTradingObicle.jsx'
 
 function NoteCard({ note }) {
   return (
-    <a className="note-card" href={note.href}>
+    <Link className="note-card" to={note.href}>
       <div className="note-meta">
         <span className="dot" />
         {note.topic} · {note.author}
       </div>
       <div className="note-title">{note.title}</div>
       <div className="note-desc">{note.desc}</div>
-    </a>
+    </Link>
   )
 }
 
-export default function App() {
+function Home() {
   return (
     <>
       <div className="grid-bg" />
@@ -37,5 +39,16 @@ export default function App() {
         <footer>Ananta Notes — dikelola oleh @zerocell01</footer>
       </main>
     </>
+  )
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/notes/degen-trading-obicle" element={<DegenTradingObicle />} />
+      </Routes>
+    </BrowserRouter>
   )
 }

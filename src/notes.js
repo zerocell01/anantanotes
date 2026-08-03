@@ -6,6 +6,6 @@ export const notes = [
     authorUrl: 'https://twitter.com/obicle',
     topic: 'Trading · Memecoin',
     desc: 'Rangkuman thread belajar trading degen / memecoin dari @obicle.',
-    href: '/notes/degen-trading-obicle.html',
+    href: '/notes/degen-trading-obicle',
   },
 ]
