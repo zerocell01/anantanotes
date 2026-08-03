@@ -1,5 +1,5 @@
 /* ---------- Layout ---------- */
-.note-degen .layout {
+.note-page .layout {
   position: relative;
   z-index: 1;
   display: grid;
@@ -8,16 +8,16 @@
   margin: 0 auto;
 }
 @media (max-width: 900px) {
-  .note-degen .layout {
+  .note-page .layout {
     grid-template-columns: 1fr;
   }
-  .note-degen aside {
+  .note-page aside {
     display: none;
   }
 }
 
 /* ---------- Sidebar ---------- */
-.note-degen aside {
+.note-page aside {
   position: sticky;
   top: 0;
   align-self: start;
@@ -26,7 +26,7 @@
   padding: 32px 20px 40px 32px;
   border-right: 1px solid var(--border);
 }
-.note-degen .back-link {
+.note-page .back-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -37,16 +37,16 @@
   margin-bottom: 20px;
   transition: color 0.15s ease;
 }
-.note-degen .back-link:hover {
+.note-page .back-link:hover {
   color: var(--bull);
 }
-.note-degen .author-row {
+.note-page .author-row {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 6px;
 }
-.note-degen .avatar {
+.note-page .avatar {
   width: 34px;
   height: 34px;
   border-radius: 50%;
@@ -54,7 +54,7 @@
   border: 1px solid var(--border);
   flex-shrink: 0;
 }
-.note-degen .brand {
+.note-page .brand {
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.12em;
@@ -62,17 +62,17 @@
   text-transform: uppercase;
   margin-bottom: 0;
 }
-.note-degen .brand strong {
+.note-page .brand strong {
   color: var(--bull);
 }
-.note-degen aside h1 {
+.note-page aside h1 {
   font-family: var(--display);
   font-size: 19px;
   margin: 0 0 24px;
   line-height: 1.25;
   color: var(--text);
 }
-.note-degen nav.toc a {
+.note-page nav.toc a {
   display: flex;
   gap: 10px;
   align-items: baseline;
@@ -83,10 +83,10 @@
   border-bottom: 1px solid transparent;
   transition: color 0.15s ease;
 }
-.note-degen nav.toc a:hover {
+.note-page nav.toc a:hover {
   color: var(--text);
 }
-.note-degen nav.toc a .num {
+.note-page nav.toc a .num {
   font-family: var(--mono);
   font-size: 11px;
   color: var(--bull);
@@ -95,16 +95,16 @@
 }
 
 /* ---------- Hero ---------- */
-.note-degen .hero {
+.note-page .hero {
   padding: 64px 48px 40px;
   border-bottom: 1px solid var(--border);
 }
 @media (max-width: 900px) {
-  .note-degen .hero {
+  .note-page .hero {
     padding: 48px 24px 32px;
   }
 }
-.note-degen .ticker {
+.note-page .ticker {
   font-family: var(--mono);
   font-size: 12px;
   color: var(--bull);
@@ -115,7 +115,7 @@
   align-items: center;
   gap: 10px;
 }
-.note-degen .ticker::before {
+.note-page .ticker::before {
   content: '';
   width: 7px;
   height: 7px;
@@ -123,7 +123,7 @@
   background: var(--bull);
   box-shadow: 0 0 8px color-mix(in srgb, var(--bull) 45%, transparent);
 }
-.note-degen h1.title {
+.note-page h1.title {
   font-family: var(--display);
   font-weight: 700;
   font-size: clamp(34px, 5vw, 56px);
@@ -132,10 +132,10 @@
   letter-spacing: -0.01em;
   color: var(--text);
 }
-.note-degen h1.title span {
+.note-page h1.title span {
   color: var(--bull);
 }
-.note-degen .byline {
+.note-page .byline {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -143,20 +143,20 @@
   font-size: 14.5px;
   color: var(--muted);
 }
-.note-degen .byline strong {
+.note-page .byline strong {
   color: var(--text);
 }
-.note-degen .avatar-lg {
+.note-page .avatar-lg {
   width: 32px;
   height: 32px;
 }
-.note-degen .subtitle {
+.note-page .subtitle {
   color: var(--muted);
   font-size: 16px;
   max-width: 640px;
   margin: 0 0 32px;
 }
-.note-degen .disclaimer {
+.note-page .disclaimer {
   font-family: var(--mono);
   font-size: 12.5px;
   color: var(--amber);
@@ -169,43 +169,43 @@
 }
 
 /* signature candlestick chart */
-.note-degen .signature {
+.note-page .signature {
   margin-top: 36px;
   display: flex;
   align-items: flex-end;
   gap: 5px;
   height: 110px;
 }
-.note-degen .candle {
+.note-page .candle {
   width: 9px;
   background: var(--bull);
   border-radius: 2px;
   opacity: 0.9;
 }
-.note-degen .candle.down {
+.note-page .candle.down {
   background: var(--bear);
 }
 
 /* ---------- Content ---------- */
-.note-degen main {
+.note-page main {
   padding: 0 48px 100px;
 }
 @media (max-width: 900px) {
-  .note-degen main {
+  .note-page main {
     padding: 0 24px 80px;
   }
 }
 
-.note-degen section.chapter {
+.note-page section.chapter {
   padding-top: 56px;
   border-bottom: 1px solid var(--border);
   padding-bottom: 48px;
 }
-.note-degen section.chapter:last-child {
+.note-page section.chapter:last-child {
   border-bottom: none;
 }
 
-.note-degen .eyebrow {
+.note-page .eyebrow {
   font-family: var(--mono);
   font-size: 12px;
   color: var(--muted);
@@ -213,52 +213,52 @@
   text-transform: uppercase;
   margin-bottom: 8px;
 }
-.note-degen .eyebrow .n {
+.note-page .eyebrow .n {
   color: var(--bull);
 }
 
-.note-degen h2 {
+.note-page h2 {
   font-family: var(--display);
   font-size: clamp(24px, 3vw, 32px);
   margin: 0 0 20px;
   letter-spacing: -0.01em;
   color: var(--text);
 }
-.note-degen h3 {
+.note-page h3 {
   font-family: var(--display);
   font-size: 18px;
   margin: 32px 0 12px;
   color: var(--text);
 }
-.note-degen h3.bear {
+.note-page h3.bear {
   color: var(--bear);
 }
-.note-degen h3.bull {
+.note-page h3.bull {
   color: var(--bull);
 }
 
-.note-degen p {
+.note-page p {
   margin: 0 0 14px;
   color: var(--text-body);
   font-size: 15.5px;
 }
-.note-degen strong {
+.note-page strong {
   color: var(--text);
 }
 
-.note-degen ul.list {
+.note-page ul.list {
   margin: 0 0 16px;
   padding-left: 0;
   list-style: none;
 }
-.note-degen ul.list li {
+.note-page ul.list li {
   position: relative;
   padding-left: 22px;
   margin-bottom: 9px;
   font-size: 15.5px;
   color: var(--text-body);
 }
-.note-degen ul.list li::before {
+.note-page ul.list li::before {
   content: '›';
   position: absolute;
   left: 0;
@@ -267,13 +267,13 @@
   font-weight: 700;
 }
 
-.note-degen ol.steps {
+.note-page ol.steps {
   margin: 0 0 20px;
   padding-left: 0;
   list-style: none;
   counter-reset: step;
 }
-.note-degen ol.steps li {
+.note-page ol.steps li {
   counter-increment: step;
   position: relative;
   padding: 12px 16px 12px 48px;
@@ -284,7 +284,7 @@
   font-size: 15px;
   box-shadow: 0 1px 2px rgba(22, 32, 26, 0.03);
 }
-.note-degen ol.steps li::before {
+.note-page ol.steps li::before {
   content: counter(step);
   position: absolute;
   left: 14px;
@@ -303,7 +303,7 @@
   font-size: 12px;
 }
 
-.note-degen .callout {
+.note-page .callout {
   border-radius: 10px;
   padding: 16px 18px;
   margin: 18px 0;
@@ -311,22 +311,22 @@
   line-height: 1.6;
   border: 1px solid;
 }
-.note-degen .callout.tip {
+.note-page .callout.tip {
   background: var(--bull-dim);
   border-color: color-mix(in srgb, var(--bull) 25%, transparent);
   color: var(--callout-tip-text);
 }
-.note-degen .callout.warn {
+.note-page .callout.warn {
   background: var(--amber-dim);
   border-color: color-mix(in srgb, var(--amber) 25%, transparent);
   color: var(--callout-warn-text);
 }
-.note-degen .callout.stop {
+.note-page .callout.stop {
   background: var(--bear-dim);
   border-color: color-mix(in srgb, var(--bear) 25%, transparent);
   color: var(--callout-stop-text);
 }
-.note-degen .callout .lbl {
+.note-page .callout .lbl {
   font-family: var(--mono);
   font-size: 11px;
   text-transform: uppercase;
@@ -336,24 +336,24 @@
   opacity: 0.85;
 }
 
-.note-degen figure {
+.note-page figure {
   margin: 22px 0;
   text-align: center;
 }
-.note-degen figure img {
+.note-page figure img {
   max-width: 100%;
   border-radius: 10px;
   border: 1px solid var(--border);
   box-shadow: 0 1px 2px rgba(22, 32, 26, 0.04), 0 12px 24px -16px rgba(22, 32, 26, 0.15);
 }
-.note-degen figcaption {
+.note-page figcaption {
   font-family: var(--mono);
   font-size: 12px;
   color: var(--muted);
   margin-top: 8px;
 }
 
-.note-degen .rule-card {
+.note-page .rule-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-left: 3px solid var(--bull);
@@ -362,7 +362,7 @@
   margin-bottom: 14px;
   box-shadow: 0 1px 2px rgba(22, 32, 26, 0.03);
 }
-.note-degen .rule-card .tag {
+.note-page .rule-card .tag {
   font-family: var(--mono);
   font-size: 11px;
   color: var(--bull);
@@ -372,7 +372,7 @@
   display: block;
 }
 
-.note-degen table.journal {
+.note-page table.journal {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -382,7 +382,7 @@
   overflow: hidden;
   border: 1px solid var(--border);
 }
-.note-degen table.journal th {
+.note-page table.journal th {
   font-family: var(--mono);
   font-size: 11px;
   text-transform: uppercase;
@@ -392,26 +392,26 @@
   background: var(--bull);
   padding: 10px 14px;
 }
-.note-degen table.journal td {
+.note-page table.journal td {
   padding: 12px 14px;
   border-bottom: 1px solid var(--border);
   color: var(--text-body);
   vertical-align: top;
 }
-.note-degen table.journal tr:last-child td {
+.note-page table.journal tr:last-child td {
   border-bottom: none;
 }
-.note-degen table.journal tr:nth-child(even) td {
+.note-page table.journal tr:nth-child(even) td {
   background: var(--surface-2);
 }
 
-.note-degen .metric-row {
+.note-page .metric-row {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin: 16px 0 20px;
 }
-.note-degen .metric {
+.note-page .metric {
   font-family: var(--mono);
   font-size: 13px;
   background: var(--surface);
@@ -421,19 +421,19 @@
   color: var(--text);
   box-shadow: 0 1px 2px rgba(22, 32, 26, 0.03);
 }
-.note-degen .metric b {
+.note-page .metric b {
   color: var(--bull);
   display: block;
   font-size: 17px;
 }
 
-.note-degen .pill-grid {
+.note-page .pill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 10px;
   margin: 16px 0 20px;
 }
-.note-degen .pill {
+.note-page .pill {
   background: var(--surface-2);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -443,13 +443,13 @@
   font-family: var(--mono);
 }
 
-.note-degen hr.div {
+.note-page hr.div {
   border: none;
   border-top: 1px solid var(--border);
   margin: 32px 0;
 }
 
-.note-degen footer {
+.note-page footer {
   padding: 40px 48px 60px;
   color: var(--muted);
   font-family: var(--mono);
@@ -457,18 +457,18 @@
   text-align: center;
 }
 
-.note-degen ::selection {
+.note-page ::selection {
   background: var(--bull);
   color: var(--selection-text);
 }
 
-.note-degen ::-webkit-scrollbar {
+.note-page ::-webkit-scrollbar {
   width: 9px;
 }
-.note-degen ::-webkit-scrollbar-track {
+.note-page ::-webkit-scrollbar-track {
   background: var(--bg);
 }
-.note-degen ::-webkit-scrollbar-thumb {
+.note-page ::-webkit-scrollbar-thumb {
   background: var(--border);
   border-radius: 4px;
 }

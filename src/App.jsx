@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { notes } from './notes.js'
 import DegenTradingObicle from './pages/DegenTradingObicle.jsx'
+import ArbitrageUyar121 from './pages/ArbitrageUyar121.jsx'
 import { ThemeProvider } from './ThemeContext.jsx'
 import ThemeToggle from './ThemeToggle.jsx'
 
@@ -57,6 +58,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/notes/degen-trading-obicle" element={<DegenTradingObicle />} />
+          <Route path="/notes/arbitrage-uyar121" element={<ArbitrageUyar121 />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

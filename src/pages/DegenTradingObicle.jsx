@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './DegenTradingObicle.css'
+import '../styles/note-page.css'
 
 const TOC = [
   ['s1', 'Trade Terminal'],
@@ -38,7 +38,7 @@ function Signature() {
 
 export default function DegenTradingObicle() {
   return (
-    <div className="note-degen">
+    <div className="note-page">
       <div className="grid-bg" />
       <div className="layout">
         <aside>

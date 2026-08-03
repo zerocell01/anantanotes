@@ -2,13 +2,14 @@
 
 **Catatan belajar Web3** — kumpulan thread, artikel, dan rangkuman dari mentor, trader, dan sumber-sumber belajar Web3 lainnya. Dikurasi dan disusun ulang biar enak dibaca dan gampang dicari lagi kalau butuh referensi.
 
-Dibangun pakai **React + Vite** (SPA, client-side routing) biar cepat dan responsif di PC maupun HP — tiap catatan adalah komponen React sendiri, gambar di-serve sebagai file statis terpisah (bukan base64 inline) supaya bisa di-cache browser.
+Dibangun pakai **React + Vite** (SPA, client-side routing) biar cepat dan responsif di PC maupun HP — tiap catatan adalah komponen React sendiri, gambar di-serve sebagai file statis terpisah (bukan base64 inline) supaya bisa di-cache browser. Ada toggle tema terang/gelap yang tersimpan otomatis.
 
 ## Isi
 
 | Catatan | Sumber | Topik |
 |---|---|---|
 | [Degen Trading Thread](src/pages/DegenTradingObicle.jsx) | [@obicle](https://twitter.com/obicle) | Trading degen / memecoin |
+| [Arbitrage From Zero #1](src/pages/ArbitrageUyar121.jsx) | [@Uyar121](https://twitter.com/Uyar121) | Cross-chain arbitrage |
 
 Daftar di atas bakal terus bertambah seiring catatan baru ditambahkan.
 
@@ -19,13 +20,17 @@ anantanotes/
 ├── src/
 │   ├── App.jsx                     # landing page + routing
 │   ├── notes.js                    # data/metadata semua catatan
+│   ├── ThemeContext.jsx            # state tema terang/gelap
+│   ├── ThemeToggle.jsx             # tombol toggle tema
 │   ├── pages/
-│   │   ├── DegenTradingObicle.jsx  # halaman catatan (1 komponen per catatan)
-│   │   └── DegenTradingObicle.css  # style khusus catatan tsb (scoped)
+│   │   ├── DegenTradingObicle.jsx  # 1 komponen per catatan
+│   │   └── ArbitrageUyar121.jsx
+│   ├── styles/
+│   │   └── note-page.css           # style bersama utk semua halaman catatan
 │   ├── main.jsx
-│   └── index.css                   # style landing page + tema global
+│   └── index.css                   # token warna tema + style landing page
 ├── public/
-│   └── notes/assets/               # gambar/asset tiap catatan
+│   └── notes/assets/               # gambar/asset tiap catatan (per folder slug)
 ├── vercel.json                     # SPA rewrite untuk Vercel
 ├── index.html                      # entry Vite
 └── package.json
@@ -49,6 +54,7 @@ npm run preview   # preview hasil build
 
 ## Nambah catatan baru
 
-1. Buat komponen baru di `src/pages/NamaCatatan.jsx` (+ CSS-nya sendiri, scoped pakai wrapper class biar tidak bentrok dengan catatan lain).
-2. Simpan gambar/asset di `public/notes/assets/nama-catatan/`.
-3. Tambahkan route-nya di `src/App.jsx` dan entrinya di array `notes` pada `src/notes.js`.
+1. Buat komponen baru di `src/pages/NamaCatatan.jsx`, import `../styles/note-page.css`, dan bungkus isinya dengan `<div className="note-page">` — style umum (layout, sidebar, callout, tabel, dst) sudah otomatis kepakai dan ikut tema terang/gelap.
+2. Simpan gambar/asset (termasuk avatar penulis) di `public/notes/assets/nama-catatan/`.
+3. Tambahkan route-nya di `src/App.jsx` dan entrinya (termasuk field `avatar`) di array `notes` pada `src/notes.js` biar muncul di landing page.
+4. Kalau catatan butuh elemen visual unik yang belum ada di `note-page.css` (misal candlestick signature-nya @obicle), taruh style tambahan itu di file CSS terpisah khusus catatan tsb, jangan modifikasi `note-page.css` langsung.

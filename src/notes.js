@@ -9,4 +9,14 @@ export const notes = [
     href: '/notes/degen-trading-obicle',
     avatar: '/notes/assets/degen-trading-obicle/avatar.jpg',
   },
+  {
+    slug: 'arbitrage-uyar121',
+    title: 'Arbitrage From Zero #1',
+    author: '@Uyar121',
+    authorUrl: 'https://twitter.com/Uyar121',
+    topic: 'Arbitrage · Cross-chain',
+    desc: 'Menguasai LayerZero & Stargate — belajar cross-chain arbitrage dari modal $20 dari @Uyar121.',
+    href: '/notes/arbitrage-uyar121',
+    avatar: '/notes/assets/arbitrage-uyar121/avatar.jpg',
+  },
 ]
